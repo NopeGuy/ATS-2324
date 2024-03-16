@@ -13,44 +13,44 @@ public abstract class Poligono
 {
     private List&lt;Ponto&gt; poligono;
     
-<span class="nc" id="L16">    public Poligono()</span>
-<span class="nc" id="L17">    { this.poligono = new ArrayList&lt;&gt;();</span>
-<span class="nc" id="L18">    }</span>
+    public Poligono()
+<span class="fc" id="L17">    { this.poligono = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L18">    }</span>
     
     public Poligono(List&lt;Ponto&gt; pol)
-<span class="nc" id="L21">    {  this();</span>
-<span class="nc bnc" id="L22" title="All 2 branches missed.">       for (Ponto p : pol)</span>
-<span class="nc" id="L23">         this.poligono.add(p.clone());</span>
-<span class="nc" id="L24">       this.poligono.add(pol.get(0).clone());</span>
-<span class="nc" id="L25">    }</span>
+<span class="fc" id="L21">    {  this();</span>
+<span class="fc bfc" id="L22" title="All 2 branches covered.">       for (Ponto p : pol)</span>
+<span class="fc" id="L23">         this.poligono.add(p.clone());</span>
+<span class="fc" id="L24">       this.poligono.add(pol.get(0).clone());</span>
+<span class="fc" id="L25">    }</span>
     
     
     public List&lt;Ponto&gt; getPoligono()
-<span class="nc" id="L29">    { List&lt;Ponto&gt; pts = new ArrayList&lt;&gt;();</span>
-<span class="nc bnc" id="L30" title="All 2 branches missed.">      for (Ponto p : this.poligono)</span>
-<span class="nc" id="L31">        pts.add(p.clone());</span>
-<span class="nc" id="L32">      return pts;</span>
+<span class="fc" id="L29">    { List&lt;Ponto&gt; pts = new ArrayList&lt;&gt;();</span>
+<span class="fc bfc" id="L30" title="All 2 branches covered.">      for (Ponto p : this.poligono)</span>
+<span class="fc" id="L31">        pts.add(p.clone());</span>
+<span class="fc" id="L32">      return pts;</span>
     }
     
     public void setPoligono(List&lt;Ponto&gt; pts)
-<span class="nc" id="L36">    { this.poligono = new ArrayList&lt;&gt;();</span>
-<span class="nc bnc" id="L37" title="All 2 branches missed.">      for (Ponto p : pts)</span>
-<span class="nc" id="L38">        this.poligono.add(p.clone());</span>
-<span class="nc" id="L39">    }</span>
+<span class="fc" id="L36">    { this.poligono = new ArrayList&lt;&gt;();</span>
+<span class="fc bfc" id="L37" title="All 2 branches covered.">      for (Ponto p : pts)</span>
+<span class="fc" id="L38">        this.poligono.add(p.clone());</span>
+<span class="fc" id="L39">    }</span>
     
     
     public void addPonto(Ponto p)
-<span class="nc" id="L43">    { this.poligono.add(p.clone()); }</span>
+<span class="fc" id="L43">    { this.poligono.add(p.clone()); }</span>
     
     public boolean fechada()
-<span class="nc" id="L46">    { return this.poligono.get(0).equals(this.poligono.get(this.poligono.size()-1));</span>
+<span class="fc" id="L46">    { return this.poligono.get(0).equals(this.poligono.get(this.poligono.size()-1));</span>
     }
     
     public double perimetro()
-<span class="nc" id="L50">    { double res = 0;</span>
-<span class="nc bnc" id="L51" title="All 2 branches missed.">      for (int i = 1 ; i &lt; this.poligono.size() ; i++)</span>
-<span class="nc" id="L52">        res += this.poligono.get(i).distancia(this.poligono.get(i-1));</span>
-<span class="nc" id="L53">      return res;</span>
+<span class="fc" id="L50">    { double res = 0;</span>
+<span class="fc bfc" id="L51" title="All 2 branches covered.">      for (int i = 1 ; i &lt; this.poligono.size() ; i++)</span>
+<span class="fc" id="L52">        res += this.poligono.get(i).distancia(this.poligono.get(i-1));</span>
+<span class="fc" id="L53">      return res;</span>
     }
     
        
@@ -66,26 +66,26 @@ and you don't have self-intersecting edges (i.e. it only works for simple polygo
 
     public boolean eConvexo()
     {  
-<span class="nc bnc" id="L69" title="All 2 branches missed.">       if (this.poligono.size() &lt; 4)     // Triangulo é sempre convexo</span>
-<span class="nc" id="L70">         return true;</span>
+<span class="fc bfc" id="L69" title="All 2 branches covered.">       if (this.poligono.size() &lt; 4)     // Triangulo é sempre convexo</span>
+<span class="fc" id="L70">         return true;</span>
 
-<span class="nc" id="L72">       boolean sign = false;</span>
-<span class="nc" id="L73">       int n = this.poligono.size();</span>
+<span class="fc" id="L72">       boolean sign = false;</span>
+<span class="fc" id="L73">       int n = this.poligono.size();</span>
 
-<span class="nc bnc" id="L75" title="All 2 branches missed.">       for(int i = 0; i &lt; n; i++)</span>
-<span class="nc" id="L76">         {  double dx1 = poligono.get((i + 2) % n).getX() - poligono.get((i + 1) % n).getX();</span>
-<span class="nc" id="L77">            double dy1 = poligono.get((i + 2) % n).getY() - poligono.get((i + 1) % n).getY();</span>
-<span class="nc" id="L78">            double dx2 = poligono.get(i).getX() - poligono.get((i + 1) % n).getX();</span>
-<span class="nc" id="L79">            double dy2 = poligono.get(i).getY() - poligono.get((i + 1) % n).getY();</span>
-<span class="nc" id="L80">            double zcrossproduct = dx1 * dy2 - dy1 * dx2;</span>
-<span class="nc bnc" id="L81" title="All 2 branches missed.">            if (i == 0)</span>
-<span class="nc bnc" id="L82" title="All 2 branches missed.">	       sign = zcrossproduct &gt; 0;</span>
-<span class="nc bnc" id="L83" title="All 4 branches missed.">            else { if (sign != (zcrossproduct &gt; 0))</span>
-<span class="nc" id="L84">                     return false;</span>
+<span class="fc bfc" id="L75" title="All 2 branches covered.">       for(int i = 0; i &lt; n; i++)</span>
+<span class="fc" id="L76">         {  double dx1 = poligono.get((i + 2) % n).getX() - poligono.get((i + 1) % n).getX();</span>
+<span class="fc" id="L77">            double dy1 = poligono.get((i + 2) % n).getY() - poligono.get((i + 1) % n).getY();</span>
+<span class="fc" id="L78">            double dx2 = poligono.get(i).getX() - poligono.get((i + 1) % n).getX();</span>
+<span class="fc" id="L79">            double dy2 = poligono.get(i).getY() - poligono.get((i + 1) % n).getY();</span>
+<span class="fc" id="L80">            double zcrossproduct = dx1 * dy2 - dy1 * dx2;</span>
+<span class="fc bfc" id="L81" title="All 2 branches covered.">            if (i == 0)</span>
+<span class="fc bfc" id="L82" title="All 2 branches covered.">	       sign = zcrossproduct &gt; 0;</span>
+<span class="fc bfc" id="L83" title="All 4 branches covered.">            else { if (sign != (zcrossproduct &gt; 0))</span>
+<span class="fc" id="L84">                     return false;</span>
                  }
         }
 
-<span class="nc" id="L88">       return true;</span>
+<span class="fc" id="L88">       return true;</span>
     }
 
 

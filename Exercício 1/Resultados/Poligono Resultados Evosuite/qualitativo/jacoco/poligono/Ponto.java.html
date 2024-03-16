@@ -13,55 +13,55 @@ public class Ponto {
    private double x, y; 
  
    // Construtores usuais 
-<span class="nc" id="L16">   public Ponto(double x, double y) </span>
-<span class="nc" id="L17">   { this.x = x; this.y = y; } </span>
+   public Ponto(double x, double y) 
+<span class="fc" id="L17">   { this.x = x; this.y = y; } </span>
    
    public Ponto()
    
-<span class="nc" id="L21">   { this(0.0, 0.0); }  // usa o outro construtor </span>
-<span class="nc" id="L22">   public Ponto(Ponto p) </span>
-<span class="nc" id="L23">   { x = p.getX(); y = p.getY(); } </span>
+<span class="fc" id="L21">   { this(0.0, 0.0); }  // usa o outro construtor </span>
+   public Ponto(Ponto p) 
+<span class="fc" id="L23">   { x = p.getX(); y = p.getY(); } </span>
  
    
    // M�todos de Inst�ncia 
-<span class="nc" id="L27">   public double getX() { return this.x; } </span>
-<span class="nc" id="L28">   public double getY() { return this.y; } </span>
+<span class="fc" id="L27">   public double getX() { return this.x; } </span>
+<span class="fc" id="L28">   public double getY() { return this.y; } </span>
    
-<span class="nc" id="L30">   public void setX(double x) {this.x = x;}</span>
-<span class="nc" id="L31">   public void setY(double y) {this.y = y;}</span>
+<span class="fc" id="L30">   public void setX(double x) {this.x = x;}</span>
+<span class="fc" id="L31">   public void setY(double y) {this.y = y;}</span>
  
    /** incremento das coordenadas */ 
    public void incCoord(double dx, double dy) { 
-<span class="nc" id="L35">      this.x += dx; this.y += dy; </span>
-<span class="nc" id="L36">   } </span>
+<span class="fc" id="L35">      this.x += dx; this.y += dy; </span>
+<span class="fc" id="L36">   } </span>
    /** decremento das coordenadas */ 
    public void decCoord(double dx, double dy) { 
-<span class="nc" id="L39">      this.x -= dx; this.y -= dy; </span>
-<span class="nc" id="L40">   } </span>
+<span class="fc" id="L39">      this.x -= dx; this.y -= dy; </span>
+<span class="fc" id="L40">   } </span>
 
     /** soma as coordenadas do ponto par�metro ao ponto receptor */ 
    public void somaPonto(Ponto p) { 
-<span class="nc" id="L44">      this.x += p.getX(); this.y += p.getY(); </span>
-<span class="nc" id="L45">   } </span>
+<span class="fc" id="L44">      this.x += p.getX(); this.y += p.getY(); </span>
+<span class="fc" id="L45">   } </span>
    /** soma os valores par�metro e devolve um novo ponto */ 
    public Ponto somaPonto(double dx, double dy) { 
-<span class="nc" id="L48">     return new Ponto(this.x += dx, this.y+= dy); </span>
+<span class="fc" id="L48">     return new Ponto(this.x += dx, this.y+= dy); </span>
    } 
    /* determina se um ponto � sim�trico (dista do eixo dos XX o 
        mesmo que do eixo dos YY */ 
    public boolean simetrico() { 
-<span class="nc bnc" id="L53" title="All 2 branches missed.">     return abs(this.x) == abs(this.y); </span>
+<span class="fc bfc" id="L53" title="All 2 branches covered.">     return abs(this.x) == abs(this.y); </span>
    } 
  
    /** verifica se ambas as coordenadas s�o positivas */ 
    public boolean coordPos() { 
-<span class="nc bnc" id="L58" title="All 4 branches missed.">     return this.x &gt; 0 &amp;&amp; this.y &gt; 0; </span>
+<span class="fc bfc" id="L58" title="All 4 branches covered.">     return this.x &gt; 0 &amp;&amp; this.y &gt; 0; </span>
    }  
  
    /** Distancia entre dois pontos */
    public double distancia (Ponto p)
-<span class="nc" id="L63">   { return Math.sqrt( (Math.pow(p.getX()- this.x,2)) </span>
-<span class="nc" id="L64">                     + (Math.pow(p.getY() - this.y,2))</span>
+<span class="fc" id="L63">   { return Math.sqrt( (Math.pow(p.getX()- this.x,2)) </span>
+<span class="fc" id="L64">                     + (Math.pow(p.getY() - this.y,2))</span>
                      );
        
     }
@@ -69,19 +69,19 @@ public class Ponto {
    // M�todos complementares usuais 
  
    public boolean equals (Object o)
-<span class="nc bnc" id="L72" title="All 2 branches missed.">    { if (this == o) </span>
-<span class="nc" id="L73">        { return true; }</span>
+<span class="fc bfc" id="L72" title="All 2 branches covered.">    { if (this == o) </span>
+<span class="fc" id="L73">        { return true; }</span>
       
-<span class="nc bnc" id="L75" title="All 4 branches missed.">      if ((o == null) || (o.getClass() != this.getClass()))</span>
-<span class="nc" id="L76">        { return false; }</span>
+<span class="fc bfc" id="L75" title="All 4 branches covered.">      if ((o == null) || (o.getClass() != this.getClass()))</span>
+<span class="fc" id="L76">        { return false; }</span>
       
-<span class="nc" id="L78">      Ponto p = (Ponto) o;</span>
-<span class="nc bnc" id="L79" title="All 4 branches missed.">      return ( this.x == p.getX() &amp;&amp; this.y == p.getY());</span>
+<span class="fc" id="L78">      Ponto p = (Ponto) o;</span>
+<span class="fc bfc" id="L79" title="All 4 branches covered.">      return ( this.x == p.getX() &amp;&amp; this.y == p.getY());</span>
     }
    
    public String toString()
    {
-<span class="nc" id="L84">     return (&quot;x : &quot; + this.x + &quot; y: &quot; + this.y);   </span>
+<span class="fc" id="L84">     return (&quot;x : &quot; + this.x + &quot; y: &quot; + this.y);   </span>
    }
     
     
@@ -89,7 +89,7 @@ public class Ponto {
  
    /** Cria uma c�pia do ponto receptor (receptor = this) */ 
    public Ponto clone() { 
-<span class="nc" id="L92">      return new Ponto(this);  </span>
+<span class="fc" id="L92">      return new Ponto(this);  </span>
    } 
 
    

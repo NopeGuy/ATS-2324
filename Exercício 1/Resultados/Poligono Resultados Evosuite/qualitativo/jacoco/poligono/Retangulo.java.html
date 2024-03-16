@@ -13,34 +13,34 @@ public class Retangulo extends PoligonoConvexo
 {
     
     public Retangulo()
-<span class="nc" id="L16">    { super(); }</span>
+<span class="fc" id="L16">    { super(); }</span>
    
     
-<span class="nc" id="L19">    public Retangulo(Ponto p1, Ponto p2, Ponto p3,Ponto p4)</span>
-<span class="nc" id="L20">    { ArrayList&lt;Ponto&gt; pts = new ArrayList&lt;&gt;();</span>
-<span class="nc" id="L21">      pts.add(p1.clone());</span>
-<span class="nc" id="L22">      pts.add(p2.clone());</span>
-<span class="nc" id="L23">      pts.add(p3.clone());</span>
-<span class="nc" id="L24">      pts.add(p4.clone());</span>
-<span class="nc" id="L25">      pts.add(p1.clone());</span>
-<span class="nc" id="L26">      super.setPoligono(pts);</span>
-<span class="nc" id="L27">    }</span>
+    public Retangulo(Ponto p1, Ponto p2, Ponto p3,Ponto p4)
+<span class="fc" id="L20">    { ArrayList&lt;Ponto&gt; pts = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L21">      pts.add(p1.clone());</span>
+<span class="fc" id="L22">      pts.add(p2.clone());</span>
+<span class="fc" id="L23">      pts.add(p3.clone());</span>
+<span class="fc" id="L24">      pts.add(p4.clone());</span>
+<span class="fc" id="L25">      pts.add(p1.clone());</span>
+<span class="fc" id="L26">      super.setPoligono(pts);</span>
+<span class="fc" id="L27">    }</span>
     
     
     public double areaQuadrado()
-<span class="nc" id="L31">    { List&lt;Ponto&gt; pts = super.getPoligono();</span>
-<span class="nc" id="L32">      Ponto p1 = pts.get(0);</span>
-<span class="nc" id="L33">      Ponto p2 = pts.get(1);</span>
-<span class="nc" id="L34">      double lado1 = p1.distancia(p2); </span>
-<span class="nc" id="L35">      Ponto p3 = pts.get(2);</span>
-<span class="nc" id="L36">      double lado2 = p2.distancia(p3); </span>
+<span class="fc" id="L31">    { List&lt;Ponto&gt; pts = super.getPoligono();</span>
+<span class="fc" id="L32">      Ponto p1 = pts.get(0);</span>
+<span class="fc" id="L33">      Ponto p2 = pts.get(1);</span>
+<span class="fc" id="L34">      double lado1 = p1.distancia(p2); </span>
+<span class="fc" id="L35">      Ponto p3 = pts.get(2);</span>
+<span class="fc" id="L36">      double lado2 = p2.distancia(p3); </span>
       
       
-<span class="nc" id="L39">      return lado1 * lado2; }</span>
+<span class="fc" id="L39">      return lado1 * lado2; }</span>
     
     
     public Retangulo clone()
-<span class="nc" id="L43">    { return new Retangulo(); }</span>
+<span class="fc" id="L43">    { return new Retangulo(); }</span>
     
     
     

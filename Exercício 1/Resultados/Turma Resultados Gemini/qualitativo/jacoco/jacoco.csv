@@ -1,5 +1,5 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
 projectturma,turma,NotaInvalidaException,0,4,0,0,0,2,0,1,0,1
+projectturma,turma,Aluno,102,167,12,24,22,38,16,17,6,9
 projectturma,turma,AlunoInexistenteException,4,0,0,0,2,0,1,0,1,0
-projectturma,turma,Aluno,97,119,10,10,21,29,14,11,6,9
-projectturma,turma,Turma,118,63,15,3,26,12,15,8,7,7
+projectturma,turma,Turma,71,137,9,15,13,31,10,16,4,10

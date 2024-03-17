@@ -34,7 +34,7 @@ public class TurmaTest {
     @Test
     public void testConstrutorListaNula() {
         assertThrows(IllegalArgumentException.class, () -> {
-            new Turma(new ArrayList<>());
+            new Turma((List<Aluno>) null);
         });
     }
 

@@ -1,6 +1,10 @@
+package turma;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import java.util.Arrays;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class TurmaTest {
@@ -44,9 +48,16 @@ class TurmaTest {
     @Test
     void testReprovados() {
         Aluno reprovado = new Aluno("Ana Ferreira", "112233");
-        assertDoesNotThrow(() -> reprovado.setNota("Matemática", 8));
+        try {
+            reprovado.setNota("Matemática", 8);
+        } catch (NotaInvalidaException e) {
+            fail("Não deveria lançar NotaInvalidaException");
+        }
         turma.addAluno(reprovado);
-        assertEquals(1, turma.reprovados().size(), "Deveria ter um aluno reprovado");
+        List<Aluno> alunosReprovados = turma.reprovados();
+        assertEquals(1, alunosReprovados.size(), "Deveria ter um aluno reprovado");
+        assertTrue(alunosReprovados.contains(reprovado), "A lista de reprovados deve conter o aluno reprovado");
     }
+
 }
 

@@ -1,0 +1,4 @@
+# Ignorar arquivos e pastas específicas do macOS
+.DS_Store
+
+/Projeto/trabalhos_POO/TP3/bin

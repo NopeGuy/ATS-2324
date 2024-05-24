@@ -1,0 +1,482 @@
+[MASTER] 10:30:14.240 [pool-2-thread-1] ERROR JUnitAnalyzer - Compilation failed on compilation units: [RegularFileObject[C:\Users\luis-\AppData\Local\Temp\EvoSuite_0_1716543013046\Model\Artigo_0_tmp__ESTest.java], RegularFileObject[C:\Users\luis-\AppData\Local\Temp\EvoSuite_0_1716543013046\Model\Artigo_0_tmp__ESTest_scaffolding.java]]
+[MASTER] 10:30:14.240 [pool-2-thread-1] ERROR JUnitAnalyzer - Classpath: C:/Users/luis-/Desktop/Universidade/LEI/ATS_LUIS/trabalhos_POO/trabalhos_POO/TP1/out/production/TP1;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP1\out\production\TP1;C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP1\out\production\TP1;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP1\out\production\TP1;C:\Users\luis-\Downloads\evosuite-1.0.6.jar;C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP1\out\production\TP1;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP1\out\production\TP1
+[MASTER] 10:30:14.240 [pool-2-thread-1] ERROR JUnitAnalyzer - evosuiteCP: C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP1\out\production\TP1;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP1\out\production\TP1;C:\Users\luis-\Downloads\evosuite-1.0.6.jar;C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP1\out\production\TP1;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP1\out\production\TP1
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 25
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 25
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 25
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 25
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 25
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 25
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 26
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 26
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 27
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 27
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 29
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 29
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 30
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 30
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 25
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: not a statement: 25
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 25
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 25
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 25
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 25
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 25
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: not a statement: 25
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 26
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 26
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: ';' expected: 26
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 27
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 27
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: ';' expected: 27
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 29
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: not a statement: 29
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 29
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 30
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 30
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: ';' expected: 30
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 88
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 88
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 106
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 106
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - RegularFileObject[C:\Users\luis-\AppData\Local\Temp\EvoSuite_0_1716543013046\Model\Artigo_0_tmp__ESTest.java]
+1: /*
+2:  * This file was automatically generated by EvoSuite
+3:  * Fri May 24 09:30:13 GMT 2024
+4:  */
+5: 
+6: package Model;
+7: 
+8: import org.junit.Test;
+9: import static org.junit.Assert.*;
+10: import Model.Artigo;
+11: import Model.Malas;
+12: import org.evosuite.runtime.EvoRunner;
+13: import org.evosuite.runtime.EvoRunnerParameters;
+14: import org.junit.runner.RunWith;
+15: 
+16: @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, useJEE = true) 
+17: public class Artigo_0_tmp__ESTest extends Artigo_0_tmp__ESTest_scaffolding {
+18: 
+19:   @Test(timeout = 4000)
+20:   public void test0()  throws Throwable  {
+21:       Malas malas0 = new Malas();
+22:       Malas malas1 = malas0.clone();
+23:       malas1.setMarca("");
+24:       malas0.setPrecoBase((-0.3022574022404174));
+25:       Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.BOM;
+26:       malas1.setAvaliacao(artigo_Avaliação0);
+27:       malas0.setAvaliacao(artigo_Avaliação0);
+28:       Artigo.Estado.values();
+29:       Artigo.Avaliação.values();
+30:       malas1.equals(artigo_Avaliação0);
+31:       malas1.setPrecoBase(1501.298);
+32:       malas0.setCodigo("");
+33:       malas1.setDim((-2239.2383F));
+34:       malas0.setTransportadora("1%V");
+35:       malas0.getDim();
+36:       assertEquals((-0.3022574022404174), malas0.getPrecoBase(), 0.01);
+37:   }
+38: }
+RegularFileObject[C:\Users\luis-\AppData\Local\Temp\EvoSuite_0_1716543013046\Model\Artigo_0_tmp__ESTest.java]
+1: /**
+2:  * Scaffolding file used to store all the setups needed to run 
+3:  * tests automatically generated by EvoSuite
+4:  * Fri May 24 09:30:13 GMT 2024
+5:  */
+6: 
+7: package Model;
+8: 
+9: import org.evosuite.runtime.annotation.EvoSuiteClassExclude;
+10: import org.junit.BeforeClass;
+11: import org.junit.Before;
+12: import org.junit.After;
+13: import org.junit.AfterClass;
+14: import org.evosuite.runtime.sandbox.Sandbox;
+15: import org.evosuite.runtime.sandbox.Sandbox.SandboxMode;
+16: 
+17: @EvoSuiteClassExclude
+18: public class Artigo_0_tmp__ESTest_scaffolding {
+19: 
+20:   @org.junit.Rule 
+21:   public org.evosuite.runtime.vnet.NonFunctionalRequirementRule nfr = new org.evosuite.runtime.vnet.NonFunctionalRequirementRule();
+22: 
+23:   private static final java.util.Properties defaultProperties = (java.util.Properties) java.lang.System.getProperties().clone(); 
+24: 
+25:   private org.evosuite.runtime.thread.ThreadStopper threadStopper =  new org.evosuite.runtime.thread.ThreadStopper (org.evosuite.runtime.thread.KillSwitchHandler.getInstance(), 3000);
+26: 
+27: 
+28:   @BeforeClass 
+29:   public static void initEvoSuiteFramework() { 
+30:     org.evosuite.runtime.RuntimeSettings.className = "Model.Artigo"; 
+31:     org.evosuite.runtime.GuiSupport.initialize(); 
+32:     org.evosuite.runtime.RuntimeSettings.maxNumberOfThreads = 100; 
+33:     org.evosuite.runtime.RuntimeSettings.maxNumberOfIterationsPerLoop = 10000; 
+34:     org.evosuite.runtime.RuntimeSettings.mockSystemIn = true; 
+35:     org.evosuite.runtime.RuntimeSettings.sandboxMode = org.evosuite.runtime.sandbox.Sandbox.SandboxMode.RECOMMENDED; 
+36:     org.evosuite.runtime.sandbox.Sandbox.initializeSecurityManagerForSUT(); 
+37:     org.evosuite.runtime.classhandling.JDKClassResetter.init();
+38:     setSystemProperties();
+39:     initializeClasses();
+40:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+41:   } 
+42: 
+43:   @AfterClass 
+44:   public static void clearEvoSuiteFramework(){ 
+45:     Sandbox.resetDefaultSecurityManager(); 
+46:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+47:   } 
+48: 
+49:   @Before 
+50:   public void initTestCase(){ 
+51:     threadStopper.storeCurrentThreads();
+52:     threadStopper.startRecordingTime();
+53:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().initHandler(); 
+54:     org.evosuite.runtime.sandbox.Sandbox.goingToExecuteSUTCode(); 
+55:     setSystemProperties(); 
+56:     org.evosuite.runtime.GuiSupport.setHeadless(); 
+57:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+58:     org.evosuite.runtime.agent.InstrumentingAgent.activate(); 
+59:   } 
+60: 
+61:   @After 
+62:   public void doneWithTestCase(){ 
+63:     threadStopper.killAndJoinClientThreads();
+64:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().safeExecuteAddedHooks(); 
+65:     org.evosuite.runtime.classhandling.JDKClassResetter.reset(); 
+66:     resetClasses(); 
+67:     org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(); 
+68:     org.evosuite.runtime.agent.InstrumentingAgent.deactivate(); 
+69:     org.evosuite.runtime.GuiSupport.restoreHeadlessMode(); 
+70:   } 
+71: 
+72:   public static void setSystemProperties() {
+73:  
+74:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+75:     java.lang.System.setProperty("file.encoding", "Cp1252"); 
+76:     java.lang.System.setProperty("java.awt.headless", "true"); 
+77:     java.lang.System.setProperty("java.io.tmpdir", "C:\\Users\\luis-\\AppData\\Local\\Temp\\"); 
+78:     java.lang.System.setProperty("user.country", "BR"); 
+79:     java.lang.System.setProperty("user.dir", "C:\\Users\\luis-\\Desktop\\Universidade\\LEI\\ATS_LUIS\\trabalhos_POO\\trabalhos_POO\\TP1"); 
+80:     java.lang.System.setProperty("user.home", "C:\\Users\\luis-"); 
+81:     java.lang.System.setProperty("user.language", "pt"); 
+82:     java.lang.System.setProperty("user.name", "luis-"); 
+83:     java.lang.System.setProperty("user.timezone", "Europe/London"); 
+84:   }
+85: 
+86:   private static void initializeClasses() {
+87:     org.evosuite.runtime.classhandling.ClassStateSupport.initializeClasses(Artigo_0_tmp__ESTest_scaffolding.class.getClassLoader() ,
+88:       "Model.Artigo$Avaliação",
+89:       "Model.TShirt$Padrao",
+90:       "Model.Sapatilhas$Tipos_Sapatilhas",
+91:       "Model.TShirt$Tamanho",
+92:       "Model.TShirt",
+93:       "Model.Malas",
+94:       "Model.Malas$Tipos_Malas",
+95:       "Model.Sapatilhas",
+96:       "Model.Artigo",
+97:       "Model.Artigo$Estado"
+98:     );
+99:   } 
+100: 
+101:   private static void resetClasses() {
+102:     org.evosuite.runtime.classhandling.ClassResetter.getInstance().setClassLoader(Artigo_0_tmp__ESTest_scaffolding.class.getClassLoader()); 
+103: 
+104:     org.evosuite.runtime.classhandling.ClassStateSupport.resetClasses(
+105:       "Model.Artigo",
+106:       "Model.Artigo$Avaliação",
+107:       "Model.Artigo$Estado",
+108:       "Model.Malas",
+109:       "Model.Sapatilhas",
+110:       "Model.TShirt"
+111:     );
+112:   }
+113: }
+
+[MASTER] 10:30:14.255 [pool-2-thread-1] ERROR JUnitAnalyzer - Failed to compile test case:
+Malas malas0 = new Malas();
+Malas malas1 = malas0.clone();
+malas1.setMarca("");
+malas0.setPrecoBase((-0.3022574022404174));
+Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.BOM;
+malas1.setAvaliacao(artigo_Avaliação0);
+malas0.setAvaliacao(artigo_Avaliação0);
+Artigo.Estado.values();
+Artigo.Avaliação.values();
+malas1.equals(artigo_Avaliação0);
+malas1.setPrecoBase(1501.298);
+malas0.setCodigo("");
+malas1.setDim((-2239.2383F));
+malas0.setTransportadora("1%V");
+malas0.getDim();
+assertEquals((-0.3022574022404174), malas0.getPrecoBase(), 0.01);
+
+
+[MASTER] 10:30:14.318 [pool-2-thread-1] ERROR JUnitAnalyzer - Compilation failed on compilation units: [RegularFileObject[C:\Users\luis-\AppData\Local\Temp\EvoSuite_1_1716543014271\Model\Artigo_1_tmp__ESTest.java], RegularFileObject[C:\Users\luis-\AppData\Local\Temp\EvoSuite_1_1716543014271\Model\Artigo_1_tmp__ESTest_scaffolding.java]]
+[MASTER] 10:30:14.318 [pool-2-thread-1] ERROR JUnitAnalyzer - Classpath: C:/Users/luis-/Desktop/Universidade/LEI/ATS_LUIS/trabalhos_POO/trabalhos_POO/TP1/out/production/TP1;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP1\out\production\TP1;C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP1\out\production\TP1;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP1\out\production\TP1;C:\Users\luis-\Downloads\evosuite-1.0.6.jar;C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP1\out\production\TP1;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP1\out\production\TP1
+[MASTER] 10:30:14.318 [pool-2-thread-1] ERROR JUnitAnalyzer - evosuiteCP: C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP1\out\production\TP1;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP1\out\production\TP1;C:\Users\luis-\Downloads\evosuite-1.0.6.jar;C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP1\out\production\TP1;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP1\out\production\TP1
+[MASTER] 10:30:14.318 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 24
+[MASTER] 10:30:14.318 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 24
+[MASTER] 10:30:14.318 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 24
+[MASTER] 10:30:14.318 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 24
+[MASTER] 10:30:14.318 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 24
+[MASTER] 10:30:14.318 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 24
+[MASTER] 10:30:14.318 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 24
+[MASTER] 10:30:14.318 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 25
+[MASTER] 10:30:14.318 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 25
+[MASTER] 10:30:14.318 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 44
+[MASTER] 10:30:14.318 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 44
+[MASTER] 10:30:14.318 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 44
+[MASTER] 10:30:14.318 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 44
+[MASTER] 10:30:14.318 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 44
+[MASTER] 10:30:14.318 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 44
+[MASTER] 10:30:14.318 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 44
+[MASTER] 10:30:14.318 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 45
+[MASTER] 10:30:14.318 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 45
+[MASTER] 10:30:14.318 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 24
+[MASTER] 10:30:14.318 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: not a statement: 24
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 24
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 24
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 24
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 24
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 24
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 24
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: not a statement: 24
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: not a statement: 24
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 25
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 25
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: <identifier> expected: 25
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal start of expression: 25
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: ';' expected: 25
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal start of expression: 25
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: ';' expected: 25
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal start of expression: 25
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: ';' expected: 25
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal start of expression: 25
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: ';' expected: 25
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal start of expression: 25
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: ';' expected: 25
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal start of expression: 25
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 44
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: not a statement: 44
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 44
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 44
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 44
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 44
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 44
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 44
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: not a statement: 44
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: not a statement: 44
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 45
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal character: '\ufffd': 45
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: <identifier> expected: 45
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal start of expression: 45
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: ';' expected: 45
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal start of expression: 45
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: ';' expected: 45
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: illegal start of expression: 45
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: ';' expected: 45
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: not a statement: 45
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: ';' expected: 45
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 88
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 88
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 106
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Diagnostic: unmappable character for encoding UTF-8: 106
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - RegularFileObject[C:\Users\luis-\AppData\Local\Temp\EvoSuite_1_1716543014271\Model\Artigo_1_tmp__ESTest.java]
+1: /*
+2:  * This file was automatically generated by EvoSuite
+3:  * Fri May 24 09:30:14 GMT 2024
+4:  */
+5: 
+6: package Model;
+7: 
+8: import org.junit.Test;
+9: import static org.junit.Assert.*;
+10: import Model.Artigo;
+11: import Model.Malas;
+12: import Model.TShirt;
+13: import org.evosuite.runtime.EvoRunner;
+14: import org.evosuite.runtime.EvoRunnerParameters;
+15: import org.junit.runner.RunWith;
+16: 
+17: @RunWith(EvoRunner.class) @EvoRunnerParameters(mockJVMNonDeterminism = true, useVFS = true, useVNET = true, resetStaticState = true, useJEE = true) 
+18: public class Artigo_1_tmp__ESTest extends Artigo_1_tmp__ESTest_scaffolding {
+19: 
+20:   @Test(timeout = 4000)
+21:   public void test0()  throws Throwable  {
+22:       Malas.Tipos_Malas malas_Tipos_Malas0 = Malas.Tipos_Malas.NORMAL;
+23:       Artigo.Estado artigo_Estado0 = Artigo.Estado.USADO;
+24:       Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.SATISFATÓRIO;
+25:       Malas malas0 = new Malas(malas_Tipos_Malas0, 1.0F, ")\"COfvysYr|'}i5=[<", (-633), "Descri\u00E7\u00E3o: ", artigo_Estado0, (-633), artigo_Avaliação0, "1dWG'=Yc(zQk|F", "1dWG'=Yc(zQk|F", "1dWG'=Yc(zQk|F", 0.0, 901.0, "{N B5");
+26:       Malas malas1 = new Malas(malas0);
+27:       Malas.Tipos_Malas malas_Tipos_Malas1 = Malas.Tipos_Malas.NORMAL;
+28:       malas1.setTipo_mala(malas_Tipos_Malas1);
+29:       malas1.setMarca("XGLr:P.-F^Kg0k55z6");
+30:       malas0.setNumeroDonos(0);
+31:       malas0.setCorrecaoPreco(1804.07098643777);
+32:       malas1.getTipo_mala();
+33:       malas1.setTipo("{N B5");
+34:       malas1.setId((-633));
+35:       malas1.setTransportadora(":E^z7klK\"Kb#)IueY");
+36:       Artigo.Estado.values();
+37:       malas1.getTransportadora();
+38:       malas1.clone();
+39:       assertEquals(1804.07098643777, malas0.getCorrecaoPreco(), 0.01);
+40:       
+41:       TShirt.Tamanho tShirt_Tamanho0 = TShirt.Tamanho.XL;
+42:       TShirt.Padrao tShirt_Padrao0 = TShirt.Padrao.PALMEIRAS;
+43:       Artigo.Estado artigo_Estado1 = Artigo.Estado.NOVO;
+44:       Artigo.Avaliação artigo_Avaliação1 = Artigo.Avaliação.SATISFATÓRIO;
+45:       TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, "", artigo_Estado1, 0, artigo_Avaliação1, "", "", "{N B5", (-989.48), 1.0F, ")\"COfvysYr|'}i5=[<");
+46:       TShirt tShirt1 = new TShirt(tShirt0);
+47:       Object object0 = new Object();
+48:       tShirt1.equals(object0);
+49:       assertEquals(2, tShirt1.getId());
+50:   }
+51: }
+RegularFileObject[C:\Users\luis-\AppData\Local\Temp\EvoSuite_1_1716543014271\Model\Artigo_1_tmp__ESTest.java]
+1: /**
+2:  * Scaffolding file used to store all the setups needed to run 
+3:  * tests automatically generated by EvoSuite
+4:  * Fri May 24 09:30:14 GMT 2024
+5:  */
+6: 
+7: package Model;
+8: 
+9: import org.evosuite.runtime.annotation.EvoSuiteClassExclude;
+10: import org.junit.BeforeClass;
+11: import org.junit.Before;
+12: import org.junit.After;
+13: import org.junit.AfterClass;
+14: import org.evosuite.runtime.sandbox.Sandbox;
+15: import org.evosuite.runtime.sandbox.Sandbox.SandboxMode;
+16: 
+17: @EvoSuiteClassExclude
+18: public class Artigo_1_tmp__ESTest_scaffolding {
+19: 
+20:   @org.junit.Rule 
+21:   public org.evosuite.runtime.vnet.NonFunctionalRequirementRule nfr = new org.evosuite.runtime.vnet.NonFunctionalRequirementRule();
+22: 
+23:   private static final java.util.Properties defaultProperties = (java.util.Properties) java.lang.System.getProperties().clone(); 
+24: 
+25:   private org.evosuite.runtime.thread.ThreadStopper threadStopper =  new org.evosuite.runtime.thread.ThreadStopper (org.evosuite.runtime.thread.KillSwitchHandler.getInstance(), 3000);
+26: 
+27: 
+28:   @BeforeClass 
+29:   public static void initEvoSuiteFramework() { 
+30:     org.evosuite.runtime.RuntimeSettings.className = "Model.Artigo"; 
+31:     org.evosuite.runtime.GuiSupport.initialize(); 
+32:     org.evosuite.runtime.RuntimeSettings.maxNumberOfThreads = 100; 
+33:     org.evosuite.runtime.RuntimeSettings.maxNumberOfIterationsPerLoop = 10000; 
+34:     org.evosuite.runtime.RuntimeSettings.mockSystemIn = true; 
+35:     org.evosuite.runtime.RuntimeSettings.sandboxMode = org.evosuite.runtime.sandbox.Sandbox.SandboxMode.RECOMMENDED; 
+36:     org.evosuite.runtime.sandbox.Sandbox.initializeSecurityManagerForSUT(); 
+37:     org.evosuite.runtime.classhandling.JDKClassResetter.init();
+38:     setSystemProperties();
+39:     initializeClasses();
+40:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+41:   } 
+42: 
+43:   @AfterClass 
+44:   public static void clearEvoSuiteFramework(){ 
+45:     Sandbox.resetDefaultSecurityManager(); 
+46:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+47:   } 
+48: 
+49:   @Before 
+50:   public void initTestCase(){ 
+51:     threadStopper.storeCurrentThreads();
+52:     threadStopper.startRecordingTime();
+53:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().initHandler(); 
+54:     org.evosuite.runtime.sandbox.Sandbox.goingToExecuteSUTCode(); 
+55:     setSystemProperties(); 
+56:     org.evosuite.runtime.GuiSupport.setHeadless(); 
+57:     org.evosuite.runtime.Runtime.getInstance().resetRuntime(); 
+58:     org.evosuite.runtime.agent.InstrumentingAgent.activate(); 
+59:   } 
+60: 
+61:   @After 
+62:   public void doneWithTestCase(){ 
+63:     threadStopper.killAndJoinClientThreads();
+64:     org.evosuite.runtime.jvm.ShutdownHookHandler.getInstance().safeExecuteAddedHooks(); 
+65:     org.evosuite.runtime.classhandling.JDKClassResetter.reset(); 
+66:     resetClasses(); 
+67:     org.evosuite.runtime.sandbox.Sandbox.doneWithExecutingSUTCode(); 
+68:     org.evosuite.runtime.agent.InstrumentingAgent.deactivate(); 
+69:     org.evosuite.runtime.GuiSupport.restoreHeadlessMode(); 
+70:   } 
+71: 
+72:   public static void setSystemProperties() {
+73:  
+74:     java.lang.System.setProperties((java.util.Properties) defaultProperties.clone()); 
+75:     java.lang.System.setProperty("file.encoding", "Cp1252"); 
+76:     java.lang.System.setProperty("java.awt.headless", "true"); 
+77:     java.lang.System.setProperty("java.io.tmpdir", "C:\\Users\\luis-\\AppData\\Local\\Temp\\"); 
+78:     java.lang.System.setProperty("user.country", "BR"); 
+79:     java.lang.System.setProperty("user.dir", "C:\\Users\\luis-\\Desktop\\Universidade\\LEI\\ATS_LUIS\\trabalhos_POO\\trabalhos_POO\\TP1"); 
+80:     java.lang.System.setProperty("user.home", "C:\\Users\\luis-"); 
+81:     java.lang.System.setProperty("user.language", "pt"); 
+82:     java.lang.System.setProperty("user.name", "luis-"); 
+83:     java.lang.System.setProperty("user.timezone", "Europe/London"); 
+84:   }
+85: 
+86:   private static void initializeClasses() {
+87:     org.evosuite.runtime.classhandling.ClassStateSupport.initializeClasses(Artigo_1_tmp__ESTest_scaffolding.class.getClassLoader() ,
+88:       "Model.Artigo$Avaliação",
+89:       "Model.TShirt$Padrao",
+90:       "Model.Sapatilhas$Tipos_Sapatilhas",
+91:       "Model.TShirt$Tamanho",
+92:       "Model.TShirt",
+93:       "Model.Malas",
+94:       "Model.Malas$Tipos_Malas",
+95:       "Model.Sapatilhas",
+96:       "Model.Artigo",
+97:       "Model.Artigo$Estado"
+98:     );
+99:   } 
+100: 
+101:   private static void resetClasses() {
+102:     org.evosuite.runtime.classhandling.ClassResetter.getInstance().setClassLoader(Artigo_1_tmp__ESTest_scaffolding.class.getClassLoader()); 
+103: 
+104:     org.evosuite.runtime.classhandling.ClassStateSupport.resetClasses(
+105:       "Model.Artigo",
+106:       "Model.Artigo$Avaliação",
+107:       "Model.Artigo$Estado",
+108:       "Model.Malas",
+109:       "Model.Sapatilhas",
+110:       "Model.TShirt"
+111:     );
+112:   }
+113: }
+
+[MASTER] 10:30:14.333 [pool-2-thread-1] ERROR JUnitAnalyzer - Failed to compile test case:
+Malas.Tipos_Malas malas_Tipos_Malas0 = Malas.Tipos_Malas.NORMAL;
+Artigo.Estado artigo_Estado0 = Artigo.Estado.USADO;
+Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.SATISFATÓRIO;
+Malas malas0 = new Malas(malas_Tipos_Malas0, 1.0F, ")\"COfvysYr|'}i5=[<", (-633), "Descri\u00E7\u00E3o: ", artigo_Estado0, (-633), artigo_Avaliação0, "1dWG'=Yc(zQk|F", "1dWG'=Yc(zQk|F", "1dWG'=Yc(zQk|F", 0.0, 901.0, "{N B5");
+Malas malas1 = new Malas(malas0);
+Malas.Tipos_Malas malas_Tipos_Malas1 = Malas.Tipos_Malas.NORMAL;
+malas1.setTipo_mala(malas_Tipos_Malas1);
+malas1.setMarca("XGLr:P.-F^Kg0k55z6");
+malas0.setNumeroDonos(0);
+malas0.setCorrecaoPreco(1804.07098643777);
+malas1.getTipo_mala();
+malas1.setTipo("{N B5");
+malas1.setId((-633));
+malas1.setTransportadora(":E^z7klK\"Kb#)IueY");
+Artigo.Estado.values();
+malas1.getTransportadora();
+malas1.clone();
+assertEquals(1804.07098643777, malas0.getCorrecaoPreco(), 0.01);
+
+TShirt.Tamanho tShirt_Tamanho0 = TShirt.Tamanho.XL;
+TShirt.Padrao tShirt_Padrao0 = TShirt.Padrao.PALMEIRAS;
+Artigo.Estado artigo_Estado1 = Artigo.Estado.NOVO;
+Artigo.Avaliação artigo_Avaliação1 = Artigo.Avaliação.SATISFATÓRIO;
+TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, "", artigo_Estado1, 0, artigo_Avaliação1, "", "", "{N B5", (-989.48), 1.0F, ")\"COfvysYr|'}i5=[<");
+TShirt tShirt1 = new TShirt(tShirt0);
+Object object0 = new Object();
+tShirt1.equals(object0);
+assertEquals(2, tShirt1.getId());
+
+

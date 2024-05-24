@@ -1,0 +1,100 @@
+* Starting client
+* Connecting to master process on port 3466
+* Analyzing classpath: 
+  - C:/Users/luis-/Desktop/Universidade/LEI/ATS_LUIS/trabalhos_POO/trabalhos_POO/TP1/out/production/TP1
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\deploy.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\access-bridge-64.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\cldrdata.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\dnsns.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jaccess.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jfxrt.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\localedata.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\nashorn.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunec.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunjce_provider.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunmscapi.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunpkcs11.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\zipfs.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\javaws.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfxswt.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\management-agent.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\plugin.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar
+  - C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP1\out\production\TP1
+* Finished analyzing classpath
+* Generating tests for class Controller.ControladorEncomenda
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+[MASTER] 10:27:17.838 [pool-2-thread-1] WARN  TestSuiteSerialization - Cannot load tests because file does not exist: C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP1\.evosuite\evosuite-seeds\Controller.ControladorEncomenda.seed
+* Loaded 0 tests from C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP1\.evosuite\evosuite-seeds\Controller.ControladorEncomenda.seed
+* Total number of test goals: 
+  - Line 87
+  - Branch 56
+  - Exception 0
+  - MutationFactory 188
+  - Output 12
+  - Method 6
+  - MethodNoException 6
+  - CBranchFitnessFactory 56
+* Using seed 1716542831515
+* Starting evolution
+[MASTER] 10:27:17.951 [pool-2-thread-1] WARN  TimeController - Phase INITIALIZATION lasted too long, 1 seconds more than allowed.
+[MASTER] 10:27:22.015 [pool-2-thread-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: No generators of type java.util.List<Model.Encomenda>
+[MASTER] 10:27:22.175 [pool-2-thread-1] WARN  TestChromosome - Functional mock problem: org.evosuite.ga.ConstructionFailedException: No generators of type java.util.List<Model.Artigo>
+* Search finished after 37s and 59 generations, 14050 statements, best individual has fitness: 396.6102941176471
+* Writing sequences to pool
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 23%
+* Total number of goals: 87
+* Number of covered goals: 20
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 11%
+* Total number of goals: 56
+* Number of covered goals: 6
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 7
+* Number of covered goals: 7
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 16%
+* Total number of goals: 188
+* Number of covered goals: 31
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 0%
+* Total number of goals: 12
+* Number of covered goals: 0
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 6
+* Number of covered goals: 6
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 67%
+* Total number of goals: 6
+* Number of covered goals: 4
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 11%
+* Total number of goals: 56
+* Number of covered goals: 6
+* Generated 7 tests with total length 44
+* Resulting test suite's coverage: 41% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 0%
+* Compiling and checking tests
+* Writing JUnit test case 'ControladorEncomenda_ESTest' to C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP1\.evosuite\tmp_2024_05_24_10_26_07\tests
+* Done!
+

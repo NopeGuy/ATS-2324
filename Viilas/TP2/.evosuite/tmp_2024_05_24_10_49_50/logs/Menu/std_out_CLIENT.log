@@ -1,0 +1,128 @@
+* Starting client
+* Connecting to master process on port 16683
+* Analyzing classpath: 
+  - C:/Users/luis-/Desktop/Universidade/LEI/ATS_LUIS/trabalhos_POO/trabalhos_POO/TP2/out/production/TP2
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\deploy.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\access-bridge-64.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\cldrdata.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\dnsns.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jaccess.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jfxrt.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\localedata.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\nashorn.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunec.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunjce_provider.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunmscapi.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunpkcs11.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\zipfs.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\javaws.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfxswt.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\management-agent.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\plugin.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar
+  - C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP2\out\production\TP2
+* Finished analyzing classpath
+* Generating tests for class Menu
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+[MASTER] 10:51:25.130 [pool-2-thread-1] WARN  TestSuiteSerialization - Cannot load tests because file does not exist: C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP2\.evosuite\evosuite-seeds\Menu.seed
+* Loaded 0 tests from C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP2\.evosuite\evosuite-seeds\Menu.seed
+* Total number of test goals: 
+  - Line 740
+  - Branch 152
+  - Exception 0
+  - MutationFactory 699
+  - Output 161
+  - Method 92
+  - MethodNoException 92
+  - CBranchFitnessFactory 152
+* Using seed 1716544276626
+* Starting evolution
+[MASTER] 10:51:25.415 [pool-2-thread-1] WARN  TimeController - Phase INITIALIZATION lasted too long, 3 seconds more than allowed.
+* Search finished after 41s and 0 generations, 134 statements, best individual has fitness: 1343.028409090909
+* Writing sequences to pool
+[MASTER] 10:52:09.718 [pool-2-thread-1] WARN  TimeController - Phase SEARCH lasted too long, 5 seconds more than allowed.
+* Minimizing test suite
+[MASTER] 10:52:22.145 [pool-2-thread-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+[MASTER] 10:52:22.145 [pool-2-thread-1] WARN  TimeController - Phase MINIMIZATION lasted too long, 1 seconds more than allowed.
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 29%
+* Total number of goals: 740
+* Number of covered goals: 213
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 32%
+* Total number of goals: 152
+* Number of covered goals: 48
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 32
+* Number of covered goals: 32
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 16%
+* Total number of goals: 699
+* Number of covered goals: 115
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 0%
+* Total number of goals: 161
+* Number of covered goals: 0
+* Coverage analysis for criterion METHOD
+[MASTER] 10:52:22.634 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] Menu.faturas_compras()V
+[MASTER] 10:52:22.634 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] Menu.menu_pesquisas()I
+[MASTER] 10:52:22.634 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] Menu.pedir_ano()I
+[MASTER] 10:52:22.634 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] Menu.pedir_artigo_adicionar()Ljava/lang/String;
+[MASTER] 10:52:22.634 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] Menu.pedir_data_fim(Ljava/time/LocalDate;)Ljava/time/LocalDate;
+[MASTER] 10:52:22.646 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] Menu.pedir_margem_lucro()D
+[MASTER] 10:52:22.646 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] Menu.pedir_tamanho_mala()I
+[MASTER] 10:52:22.646 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] Menu.pedir_transportadora()J
+[MASTER] 10:52:22.646 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] Menu.pedir_valor_grande()D
+[MASTER] 10:52:22.651 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] Menu.tempo_avançar(Ljava/time/LocalDate;)Ljava/time/LocalDate;
+* Coverage of criterion METHOD: 74%
+* Total number of goals: 92
+* Number of covered goals: 68
+* Coverage analysis for criterion METHODNOEXCEPTION
+[MASTER] 10:52:22.696 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Menu.faturas_compras()V
+[MASTER] 10:52:22.701 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Menu.menu_pesquisas()I
+[MASTER] 10:52:22.701 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Menu.pedir_ano()I
+[MASTER] 10:52:22.701 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Menu.pedir_artigo_adicionar()Ljava/lang/String;
+[MASTER] 10:52:22.701 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Menu.pedir_data()Ljava/time/LocalDate;
+[MASTER] 10:52:22.701 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Menu.pedir_data_fim(Ljava/time/LocalDate;)Ljava/time/LocalDate;
+[MASTER] 10:52:22.701 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Menu.pedir_margem_lucro()D
+[MASTER] 10:52:22.701 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Menu.pedir_morada()Ljava/lang/String;
+[MASTER] 10:52:22.708 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Menu.pedir_numero_utlizador()I
+[MASTER] 10:52:22.709 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Menu.pedir_tamanho_mala()I
+[MASTER] 10:52:22.709 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Menu.pedir_transportadora()J
+[MASTER] 10:52:22.709 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Menu.pedir_valor_grande()D
+[MASTER] 10:52:22.709 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Menu.tempo_avançar(Ljava/time/LocalDate;)Ljava/time/LocalDate;
+* Coverage of criterion METHODNOEXCEPTION: 46%
+* Total number of goals: 92
+* Number of covered goals: 42
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 32%
+* Total number of goals: 152
+* Number of covered goals: 48
+* Generated 50 tests with total length 982
+* Resulting test suite's coverage: 38% (average coverage for all fitness functions)
+* Generating assertions
+[MASTER] 10:52:22.980 [pool-2-thread-1] WARN  TimeController - Current phase ASSERTION_GENERATION could run up to 5s, but only 2s are left
+* Skipping assertion generation because not enough time is left
+* Compiling and checking tests
+[MASTER] 10:52:23.234 [pool-2-thread-1] WARN  TimeController - Current phase JUNIT_CHECK could run up to 5s, but only 2s are left
+[MASTER] 10:52:23.234 [pool-2-thread-1] WARN  TimeController - Current phase WRITING_TESTS could run up to 5s, but only 2s are left
+* Writing JUnit test case 'Menu_ESTest' to C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP2\.evosuite\tmp_2024_05_24_10_49_50\tests
+[MASTER] 10:52:29.552 [pool-2-thread-1] WARN  TimeController - Phase WRITING_TESTS lasted too long, 1 seconds more than allowed.
+* Done!
+

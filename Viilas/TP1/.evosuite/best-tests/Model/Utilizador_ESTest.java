@@ -8,22 +8,15 @@ package Model;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import static org.evosuite.runtime.EvoAssertions.*;
-import Model.Artigo;
-import Model.Malas;
-import Model.Sapatilhas;
-import Model.TShirt;
-import Model.Utilizador;
-import java.time.Clock;
+
 import java.time.DateTimeException;
 import java.time.LocalDate;
-import java.time.Month;
 import java.time.Period;
 import java.time.ZoneId;
 import java.time.ZoneOffset;
 import java.time.chrono.IsoChronology;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
-import java.time.format.FormatStyle;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -32,7 +25,6 @@ import java.util.Map;
 import org.evosuite.runtime.EvoRunner;
 import org.evosuite.runtime.EvoRunnerParameters;
 import org.evosuite.runtime.System;
-import org.evosuite.runtime.mock.java.time.MockClock;
 import org.evosuite.runtime.mock.java.time.MockLocalDate;
 import org.evosuite.runtime.mock.java.time.chrono.MockIsoChronology;
 import org.junit.runner.RunWith;
@@ -879,8 +871,8 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       
       Sapatilhas.Tipos_Sapatilhas sapatilhas_Tipos_Sapatilhas0 = Sapatilhas.Tipos_Sapatilhas.PREMIUM;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.NOVO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.BOM;
-      Sapatilhas sapatilhas0 = new Sapatilhas(0, true, "PALMEIRAS", localDate0, sapatilhas_Tipos_Sapatilhas0, "PALMEIRAS", artigo_Estado0, 0, artigo_Avaliação0, "", "XL", "Tipo de Sapatilhas: ", 1, 0, (String) null);
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.BOM;
+      Sapatilhas sapatilhas0 = new Sapatilhas(0, true, "PALMEIRAS", localDate0, sapatilhas_Tipos_Sapatilhas0, "PALMEIRAS", artigo_Estado0, 0, artigo_Avaliacao0, "", "XL", "Tipo de Sapatilhas: ", 1, 0, (String) null);
       assertNotNull(sapatilhas0);
       assertEquals("PALMEIRAS", sapatilhas0.getCor());
       assertEquals("PALMEIRAS", sapatilhas0.getTipo());
@@ -1107,8 +1099,8 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       TShirt.Tamanho tShirt_Tamanho0 = TShirt.Tamanho.L;
       TShirt.Padrao tShirt_Padrao0 = TShirt.Padrao.PALMEIRAS;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.NOVO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.IMPECÁVEL;
-      TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, "}h [AC]J57", artigo_Estado0, (-4886), artigo_Avaliação0, "xS;v-D", (String) null, "", 1.0, (-3334.378007292045), "xS;v-D");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.IMPECÁVEL;
+      TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, "}h [AC]J57", artigo_Estado0, (-4886), artigo_Avaliacao0, "xS;v-D", (String) null, "", 1.0, (-3334.378007292045), "xS;v-D");
       assertNotNull(tShirt0);
       assertEquals("xS;v-D", tShirt0.getDescricao());
       assertEquals("xS;v-D", tShirt0.getTransportadora());
@@ -3772,15 +3764,15 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       TShirt.Tamanho tShirt_Tamanho0 = TShirt.Tamanho.S;
       TShirt.Padrao tShirt_Padrao0 = TShirt.Padrao.PALMEIRAS;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.USADO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.SATISFATÓRIO;
-      TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, "Ano da cole\u00E7\u00E3o: ", artigo_Estado0, (-1077), artigo_Avaliação0, "Ano da cole\u00E7\u00E3o: ", "Ano da cole\u00E7\u00E3o: ", ".WOuf:90BA/}Ot", (-1077), 0.0, ".WOuf:90BA/}Ot");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.SATISFATÓRIO;
+      TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, "Ano da cole\u00E7\u00E3o: ", artigo_Estado0, (-1077), artigo_Avaliacao0, "Ano da cole\u00E7\u00E3o: ", "Ano da cole\u00E7\u00E3o: ", ".WOuf:90BA/}Ot", (-1077), 0.0, ".WOuf:90BA/}Ot");
       assertNotNull(tShirt0);
       assertEquals("Ano da cole\u00E7\u00E3o: ", tShirt0.getTipo());
       assertEquals(TShirt.Padrao.PALMEIRAS, tShirt0.getPadrao());
       assertEquals(0.0, tShirt0.getCorrecaoPreco(), 0.01);
       assertEquals("Ano da cole\u00E7\u00E3o: ", tShirt0.getMarca());
       assertEquals((-1077), tShirt0.getNumeroDonos());
-      assertEquals(Artigo.Avaliação.SATISFATÓRIO, tShirt0.getAvaliacao());
+      assertEquals(Artigo.Avaliacao.SATISFATÓRIO, tShirt0.getAvaliacao());
       assertEquals(1, tShirt0.getId());
       assertEquals("Ano da cole\u00E7\u00E3o: ", tShirt0.getDescricao());
       assertEquals(TShirt.Tamanho.S, tShirt0.getTamanho());
@@ -3798,7 +3790,7 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       assertEquals(0.0, tShirt0.getCorrecaoPreco(), 0.01);
       assertEquals("Ano da cole\u00E7\u00E3o: ", tShirt0.getMarca());
       assertEquals((-1077), tShirt0.getNumeroDonos());
-      assertEquals(Artigo.Avaliação.SATISFATÓRIO, tShirt0.getAvaliacao());
+      assertEquals(Artigo.Avaliacao.SATISFATÓRIO, tShirt0.getAvaliacao());
       assertEquals(1, tShirt0.getId());
       assertEquals("Ano da cole\u00E7\u00E3o: ", tShirt0.getDescricao());
       assertEquals(TShirt.Tamanho.S, tShirt0.getTamanho());
@@ -3815,7 +3807,7 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       assertEquals("Ano da cole\u00E7\u00E3o: ", tShirt1.getTipo());
       assertEquals(TShirt.Padrao.PALMEIRAS, tShirt1.getPadrao());
       assertEquals(0.0, tShirt1.getCorrecaoPreco(), 0.01);
-      assertEquals(Artigo.Avaliação.SATISFATÓRIO, tShirt1.getAvaliacao());
+      assertEquals(Artigo.Avaliacao.SATISFATÓRIO, tShirt1.getAvaliacao());
       assertEquals(1, tShirt1.getId());
       assertEquals("Ano da cole\u00E7\u00E3o: ", tShirt1.getDescricao());
       assertEquals("Ano da cole\u00E7\u00E3o: ", tShirt1.getMarca());
@@ -3835,7 +3827,7 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       assertEquals(0.0, tShirt0.getCorrecaoPreco(), 0.01);
       assertEquals("Ano da cole\u00E7\u00E3o: ", tShirt0.getMarca());
       assertEquals((-1077), tShirt0.getNumeroDonos());
-      assertEquals(Artigo.Avaliação.SATISFATÓRIO, tShirt0.getAvaliacao());
+      assertEquals(Artigo.Avaliacao.SATISFATÓRIO, tShirt0.getAvaliacao());
       assertEquals(1, tShirt0.getId());
       assertEquals("Ano da cole\u00E7\u00E3o: ", tShirt0.getDescricao());
       assertEquals(TShirt.Tamanho.S, tShirt0.getTamanho());
@@ -3852,7 +3844,7 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       assertEquals("Ano da cole\u00E7\u00E3o: ", tShirt1.getTipo());
       assertEquals(TShirt.Padrao.PALMEIRAS, tShirt1.getPadrao());
       assertEquals(0.0, tShirt1.getCorrecaoPreco(), 0.01);
-      assertEquals(Artigo.Avaliação.SATISFATÓRIO, tShirt1.getAvaliacao());
+      assertEquals(Artigo.Avaliacao.SATISFATÓRIO, tShirt1.getAvaliacao());
       assertEquals(1, tShirt1.getId());
       assertEquals("Ano da cole\u00E7\u00E3o: ", tShirt1.getDescricao());
       assertEquals("Ano da cole\u00E7\u00E3o: ", tShirt1.getMarca());
@@ -4346,9 +4338,9 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       assertEquals("", utilizador0.getEmail());
       assertEquals("", utilizador0.getNome());
       
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.BOM;
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.BOM;
       double double0 = 1.0;
-      Malas malas0 = new Malas(malas_Tipos_Malas0, (-1.0F), "Nome: ", (-2950), "Nome: ", artigo_Estado0, 1391, artigo_Avaliação0, "^T:\"]TWBY]&!&{(", "Nome: ", "^T:\"]TWBY]&!&{(", 1391, 1.0, "Nome: ");
+      Malas malas0 = new Malas(malas_Tipos_Malas0, (-1.0F), "Nome: ", (-2950), "Nome: ", artigo_Estado0, 1391, artigo_Avaliacao0, "^T:\"]TWBY]&!&{(", "Nome: ", "^T:\"]TWBY]&!&{(", 1391, 1.0, "Nome: ");
       assertNotNull(malas0);
       assertEquals((-2950), malas0.getAno_da_colecao());
       assertEquals("Nome: ", malas0.getTipo());
@@ -4768,8 +4760,8 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       
       Sapatilhas.Tipos_Sapatilhas sapatilhas_Tipos_Sapatilhas0 = Sapatilhas.Tipos_Sapatilhas.PREMIUM;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.NOVO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.IMPECÁVEL;
-      Sapatilhas sapatilhas2 = new Sapatilhas(0, true, "7~)(k5,kUsFY", localDate0, sapatilhas_Tipos_Sapatilhas0, "7~)(k5,kUsFY", artigo_Estado0, 0, artigo_Avaliação0, "7~)(k5,kUsFY", "7~)(k5,kUsFY", (String) null, 0, (-742.4105), "u-'y>opxP#^U*lu{qe");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.IMPECÁVEL;
+      Sapatilhas sapatilhas2 = new Sapatilhas(0, true, "7~)(k5,kUsFY", localDate0, sapatilhas_Tipos_Sapatilhas0, "7~)(k5,kUsFY", artigo_Estado0, 0, artigo_Avaliacao0, "7~)(k5,kUsFY", "7~)(k5,kUsFY", (String) null, 0, (-742.4105), "u-'y>opxP#^U*lu{qe");
       assertNotNull(sapatilhas2);
       assertNull(sapatilhas0.getEstado());
       assertEquals(0.0, sapatilhas0.getCorrecaoPreco(), 0.01);
@@ -9637,12 +9629,12 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       
       Malas.Tipos_Malas malas_Tipos_Malas0 = Malas.Tipos_Malas.NORMAL;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.USADO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.IMPECÁVEL;
-      Malas malas0 = new Malas(malas_Tipos_Malas0, (-3032.1218F), "ju.}`nMg!EbGr!%hM", 0, "jJq&F!iap}", artigo_Estado0, 0, artigo_Avaliação0, "\n", "uw `7wg", "Tipo de mala: ", (-4897.053), (-3032.1218F), "NIF: ");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.IMPECÁVEL;
+      Malas malas0 = new Malas(malas_Tipos_Malas0, (-3032.1218F), "ju.}`nMg!EbGr!%hM", 0, "jJq&F!iap}", artigo_Estado0, 0, artigo_Avaliacao0, "\n", "uw `7wg", "Tipo de mala: ", (-4897.053), (-3032.1218F), "NIF: ");
       assertNotNull(malas0);
       assertEquals("uw `7wg", malas0.getMarca());
       assertEquals(0, malas0.getNumeroDonos());
-      assertEquals(Artigo.Avaliação.IMPECÁVEL, malas0.getAvaliacao());
+      assertEquals(Artigo.Avaliacao.IMPECÁVEL, malas0.getAvaliacao());
       assertEquals((-3032.1218F), malas0.getDim(), 0.01F);
       assertEquals("ju.}`nMg!EbGr!%hM", malas0.getMaterial());
       assertEquals("Tipo de mala: ", malas0.getCodigo());
@@ -9661,7 +9653,7 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       assertEquals(1, linkedList0.size());
       assertEquals("uw `7wg", malas0.getMarca());
       assertEquals(0, malas0.getNumeroDonos());
-      assertEquals(Artigo.Avaliação.IMPECÁVEL, malas0.getAvaliacao());
+      assertEquals(Artigo.Avaliacao.IMPECÁVEL, malas0.getAvaliacao());
       assertEquals((-3032.1218F), malas0.getDim(), 0.01F);
       assertEquals("ju.}`nMg!EbGr!%hM", malas0.getMaterial());
       assertEquals("Tipo de mala: ", malas0.getCodigo());
@@ -10159,7 +10151,7 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       
       Sapatilhas.Tipos_Sapatilhas sapatilhas_Tipos_Sapatilhas0 = Sapatilhas.Tipos_Sapatilhas.PREMIUM;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.USADO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.SATISFATÓRIO;
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.SATISFATÓRIO;
       TShirt tShirt0 = new TShirt();
       assertNotNull(tShirt0);
       assertNull(tShirt0.getTransportadora());
@@ -10250,9 +10242,9 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       assertEquals("", utilizador0.getEmail());
       assertEquals("", utilizador0.getMorada());
       
-      Sapatilhas sapatilhas2 = new Sapatilhas(1, false, (String) null, localDate0, sapatilhas_Tipos_Sapatilhas0, "AvD", artigo_Estado0, 1, artigo_Avaliação0, ",$gch) X~(j", ",$gch) X~(j", ",$gch) X~(j", 0.0, (-1.0), "AvD");
+      Sapatilhas sapatilhas2 = new Sapatilhas(1, false, (String) null, localDate0, sapatilhas_Tipos_Sapatilhas0, "AvD", artigo_Estado0, 1, artigo_Avaliacao0, ",$gch) X~(j", ",$gch) X~(j", ",$gch) X~(j", 0.0, (-1.0), "AvD");
       assertNotNull(sapatilhas2);
-      assertEquals(Artigo.Avaliação.SATISFATÓRIO, sapatilhas2.getAvaliacao());
+      assertEquals(Artigo.Avaliacao.SATISFATÓRIO, sapatilhas2.getAvaliacao());
       assertEquals(1, sapatilhas2.getTamanhoNumerico());
       assertEquals(",$gch) X~(j", sapatilhas2.getCodigo());
       assertEquals(Artigo.Estado.USADO, sapatilhas2.getEstado());
@@ -10272,7 +10264,7 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       
       Sapatilhas sapatilhas3 = new Sapatilhas(sapatilhas2);
       assertNotNull(sapatilhas3);
-      assertEquals(Artigo.Avaliação.SATISFATÓRIO, sapatilhas2.getAvaliacao());
+      assertEquals(Artigo.Avaliacao.SATISFATÓRIO, sapatilhas2.getAvaliacao());
       assertEquals(1, sapatilhas2.getTamanhoNumerico());
       assertEquals(",$gch) X~(j", sapatilhas2.getCodigo());
       assertEquals(Artigo.Estado.USADO, sapatilhas2.getEstado());
@@ -10299,7 +10291,7 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       assertEquals("AvD", sapatilhas3.getTipo());
       assertEquals(3, sapatilhas3.getId());
       assertNull(sapatilhas3.getCor());
-      assertEquals(Artigo.Avaliação.SATISFATÓRIO, sapatilhas3.getAvaliacao());
+      assertEquals(Artigo.Avaliacao.SATISFATÓRIO, sapatilhas3.getAvaliacao());
       assertEquals(Sapatilhas.Tipos_Sapatilhas.PREMIUM, sapatilhas3.getTiposSapatilhas());
       assertEquals((-1.0), sapatilhas3.getCorrecaoPreco(), 0.01);
       assertFalse(sapatilhas2.equals((Object)sapatilhas0));
@@ -10333,10 +10325,10 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       assertEquals("AvD", sapatilhas4.getTransportadora());
       assertEquals(",$gch) X~(j", sapatilhas4.getCodigo());
       assertEquals(",$gch) X~(j", sapatilhas4.getDescricao());
-      assertEquals(Artigo.Avaliação.SATISFATÓRIO, sapatilhas4.getAvaliacao());
+      assertEquals(Artigo.Avaliacao.SATISFATÓRIO, sapatilhas4.getAvaliacao());
       assertEquals((-1.0), sapatilhas4.getCorrecaoPreco(), 0.01);
       assertEquals(1, sapatilhas4.getTamanhoNumerico());
-      assertEquals(Artigo.Avaliação.SATISFATÓRIO, sapatilhas2.getAvaliacao());
+      assertEquals(Artigo.Avaliacao.SATISFATÓRIO, sapatilhas2.getAvaliacao());
       assertEquals(1, sapatilhas2.getTamanhoNumerico());
       assertEquals(",$gch) X~(j", sapatilhas2.getCodigo());
       assertEquals(Artigo.Estado.USADO, sapatilhas2.getEstado());
@@ -10363,7 +10355,7 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       assertEquals("AvD", sapatilhas3.getTipo());
       assertEquals(3, sapatilhas3.getId());
       assertNull(sapatilhas3.getCor());
-      assertEquals(Artigo.Avaliação.SATISFATÓRIO, sapatilhas3.getAvaliacao());
+      assertEquals(Artigo.Avaliacao.SATISFATÓRIO, sapatilhas3.getAvaliacao());
       assertEquals(Sapatilhas.Tipos_Sapatilhas.PREMIUM, sapatilhas3.getTiposSapatilhas());
       assertEquals((-1.0), sapatilhas3.getCorrecaoPreco(), 0.01);
       assertFalse(sapatilhas4.equals((Object)sapatilhas1));
@@ -10401,11 +10393,11 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       assertEquals("AvD", sapatilhas4.getTransportadora());
       assertEquals(",$gch) X~(j", sapatilhas4.getCodigo());
       assertEquals(",$gch) X~(j", sapatilhas4.getDescricao());
-      assertEquals(Artigo.Avaliação.SATISFATÓRIO, sapatilhas4.getAvaliacao());
+      assertEquals(Artigo.Avaliacao.SATISFATÓRIO, sapatilhas4.getAvaliacao());
       assertEquals((-1.0), sapatilhas4.getCorrecaoPreco(), 0.01);
       assertEquals(1, sapatilhas4.getTamanhoNumerico());
       assertEquals(1, linkedList1.size());
-      assertEquals(Artigo.Avaliação.SATISFATÓRIO, sapatilhas2.getAvaliacao());
+      assertEquals(Artigo.Avaliacao.SATISFATÓRIO, sapatilhas2.getAvaliacao());
       assertEquals(1, sapatilhas2.getTamanhoNumerico());
       assertEquals(",$gch) X~(j", sapatilhas2.getCodigo());
       assertEquals(Artigo.Estado.USADO, sapatilhas2.getEstado());
@@ -10432,7 +10424,7 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       assertEquals("AvD", sapatilhas3.getTipo());
       assertEquals(3, sapatilhas3.getId());
       assertNull(sapatilhas3.getCor());
-      assertEquals(Artigo.Avaliação.SATISFATÓRIO, sapatilhas3.getAvaliacao());
+      assertEquals(Artigo.Avaliacao.SATISFATÓRIO, sapatilhas3.getAvaliacao());
       assertEquals(Sapatilhas.Tipos_Sapatilhas.PREMIUM, sapatilhas3.getTiposSapatilhas());
       assertEquals((-1.0), sapatilhas3.getCorrecaoPreco(), 0.01);
       assertFalse(sapatilhas4.equals((Object)sapatilhas1));
@@ -10580,12 +10572,12 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       assertNull(malas0.getTransportadora());
       assertEquals(1, malas0.getId());
       
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.IMPECÁVEL;
-      malas0.setAvaliacao(artigo_Avaliação0);
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.IMPECÁVEL;
+      malas0.setAvaliacao(artigo_Avaliacao0);
       assertNull(malas0.getEstado());
       assertEquals(0.0, malas0.getCorrecaoPreco(), 0.01);
       assertNull(malas0.getTipo_mala());
-      assertEquals(Artigo.Avaliação.IMPECÁVEL, malas0.getAvaliacao());
+      assertEquals(Artigo.Avaliacao.IMPECÁVEL, malas0.getAvaliacao());
       assertEquals("", malas0.getTipo());
       assertEquals(0.0F, malas0.getDim(), 0.01F);
       assertEquals(0.0, malas0.getPrecoBase(), 0.01);
@@ -10605,7 +10597,7 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       assertNull(malas0.getEstado());
       assertEquals(0.0, malas0.getCorrecaoPreco(), 0.01);
       assertNull(malas0.getTipo_mala());
-      assertEquals(Artigo.Avaliação.IMPECÁVEL, malas0.getAvaliacao());
+      assertEquals(Artigo.Avaliacao.IMPECÁVEL, malas0.getAvaliacao());
       assertEquals("", malas0.getTipo());
       assertEquals(0.0F, malas0.getDim(), 0.01F);
       assertEquals(0.0, malas0.getPrecoBase(), 0.01);
@@ -10624,7 +10616,7 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       assertNull(malas1.getTransportadora());
       assertEquals("", malas1.getMarca());
       assertEquals(1, malas1.getId());
-      assertEquals(Artigo.Avaliação.IMPECÁVEL, malas1.getAvaliacao());
+      assertEquals(Artigo.Avaliacao.IMPECÁVEL, malas1.getAvaliacao());
       assertEquals("", malas1.getTipo());
       assertNull(malas1.getTipo_mala());
       assertEquals(0.0, malas1.getPrecoBase(), 0.01);
@@ -10645,7 +10637,7 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       assertNull(malas0.getEstado());
       assertEquals(0.0, malas0.getCorrecaoPreco(), 0.01);
       assertNull(malas0.getTipo_mala());
-      assertEquals(Artigo.Avaliação.IMPECÁVEL, malas0.getAvaliacao());
+      assertEquals(Artigo.Avaliacao.IMPECÁVEL, malas0.getAvaliacao());
       assertEquals("", malas0.getTipo());
       assertEquals(0.0F, malas0.getDim(), 0.01F);
       assertEquals(0.0, malas0.getPrecoBase(), 0.01);
@@ -10799,15 +10791,15 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       assertEquals("", malas0.getDescricao());
       assertNull(malas0.getAvaliacao());
       
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.IMPECÁVEL;
-      malas0.setAvaliacao(artigo_Avaliação0);
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.IMPECÁVEL;
+      malas0.setAvaliacao(artigo_Avaliacao0);
       assertNull(malas0.getEstado());
       assertNull(malas0.getTipo_mala());
       assertEquals(0.0, malas0.getCorrecaoPreco(), 0.01);
       assertNull(malas0.getTransportadora());
       assertEquals(0.0F, malas0.getDim(), 0.01F);
       assertEquals(0, malas0.getNumeroDonos());
-      assertEquals(Artigo.Avaliação.IMPECÁVEL, malas0.getAvaliacao());
+      assertEquals(Artigo.Avaliacao.IMPECÁVEL, malas0.getAvaliacao());
       assertEquals("", malas0.getMaterial());
       assertEquals(1, malas0.getId());
       assertEquals(0.0, malas0.getPrecoBase(), 0.01);
@@ -10827,7 +10819,7 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       assertNull(malas0.getTransportadora());
       assertEquals(0.0F, malas0.getDim(), 0.01F);
       assertEquals(0, malas0.getNumeroDonos());
-      assertEquals(Artigo.Avaliação.IMPECÁVEL, malas0.getAvaliacao());
+      assertEquals(Artigo.Avaliacao.IMPECÁVEL, malas0.getAvaliacao());
       assertEquals("", malas0.getMaterial());
       assertEquals(1, malas0.getId());
       assertEquals(0.0, malas0.getPrecoBase(), 0.01);
@@ -10850,7 +10842,7 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       assertEquals("", malas1.getMaterial());
       assertEquals(0.0, malas1.getCorrecaoPreco(), 0.01);
       assertEquals(0.0F, malas1.getDim(), 0.01F);
-      assertEquals(Artigo.Avaliação.IMPECÁVEL, malas1.getAvaliacao());
+      assertEquals(Artigo.Avaliacao.IMPECÁVEL, malas1.getAvaliacao());
       assertTrue(malas1.equals((Object)malas0));
       
       utilizador0.adicionaCompra(malas0);
@@ -10867,7 +10859,7 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       assertNull(malas0.getTransportadora());
       assertEquals(0.0F, malas0.getDim(), 0.01F);
       assertEquals(0, malas0.getNumeroDonos());
-      assertEquals(Artigo.Avaliação.IMPECÁVEL, malas0.getAvaliacao());
+      assertEquals(Artigo.Avaliacao.IMPECÁVEL, malas0.getAvaliacao());
       assertEquals("", malas0.getMaterial());
       assertEquals(1, malas0.getId());
       assertEquals(0.0, malas0.getPrecoBase(), 0.01);
@@ -11530,8 +11522,8 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       
       Sapatilhas.Tipos_Sapatilhas sapatilhas_Tipos_Sapatilhas0 = Sapatilhas.Tipos_Sapatilhas.NORMAL;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.NOVO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.BOM;
-      Sapatilhas sapatilhas0 = new Sapatilhas((-2950), false, "I", localDate0, sapatilhas_Tipos_Sapatilhas0, "aig~_5U*", artigo_Estado0, 45, artigo_Avaliação0, "", "", "", 1.0, 45, "");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.BOM;
+      Sapatilhas sapatilhas0 = new Sapatilhas((-2950), false, "I", localDate0, sapatilhas_Tipos_Sapatilhas0, "aig~_5U*", artigo_Estado0, 45, artigo_Avaliacao0, "", "", "", 1.0, 45, "");
       assertNotNull(sapatilhas0);
       assertEquals("I", sapatilhas0.getCor());
       assertEquals(1, sapatilhas0.getId());
@@ -11639,8 +11631,8 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       TShirt.Tamanho tShirt_Tamanho0 = TShirt.Tamanho.L;
       TShirt.Padrao tShirt_Padrao0 = TShirt.Padrao.PALMEIRAS;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.NOVO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.IMPECÁVEL;
-      TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, "}h [AC]J57", artigo_Estado0, (-4886), artigo_Avaliação0, "xS;v-D", (String) null, "", 1.0, (-3334.378007292045), "xS;v-D");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.IMPECÁVEL;
+      TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, "}h [AC]J57", artigo_Estado0, (-4886), artigo_Avaliacao0, "xS;v-D", (String) null, "", 1.0, (-3334.378007292045), "xS;v-D");
       utilizador0.adicionarPorVender(tShirt0);
       utilizador0.toString();
       utilizador0.setNif((-2801));
@@ -11665,8 +11657,8 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
       TShirt.Tamanho tShirt_Tamanho0 = TShirt.Tamanho.L;
       TShirt.Padrao tShirt_Padrao0 = TShirt.Padrao.PALMEIRAS;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.NOVO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.IMPECÁVEL;
-      TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, "}h [AC]J57", artigo_Estado0, (-4886), artigo_Avaliação0, "xS;v-D", (String) null, "", 1.0, (-3334.378007292045), "xS;v-D");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.IMPECÁVEL;
+      TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, "}h [AC]J57", artigo_Estado0, (-4886), artigo_Avaliacao0, "xS;v-D", (String) null, "", 1.0, (-3334.378007292045), "xS;v-D");
       Artigo.Estado artigo_Estado1 = Artigo.Estado.USADO;
       tShirt0.setEstado(artigo_Estado1);
       utilizador0.adicionarPorVender(tShirt0);
@@ -11704,8 +11696,8 @@ public class Utilizador_ESTest extends Utilizador_ESTest_scaffolding {
   public void test61()  throws Throwable  {
       Utilizador utilizador0 = new Utilizador();
       Malas malas0 = new Malas();
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.SATISFATÓRIO;
-      malas0.setAvaliacao(artigo_Avaliação0);
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.SATISFATÓRIO;
+      malas0.setAvaliacao(artigo_Avaliacao0);
       utilizador0.adicionaCompra(malas0);
       ZoneOffset zoneOffset0 = ZoneOffset.MAX;
       utilizador0.toString();

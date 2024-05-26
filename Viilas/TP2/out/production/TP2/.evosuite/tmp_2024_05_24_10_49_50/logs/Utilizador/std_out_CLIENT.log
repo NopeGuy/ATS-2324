@@ -1,0 +1,103 @@
+* Starting client
+* Connecting to master process on port 3934
+* Analyzing classpath: 
+  - C:/Users/luis-/Desktop/Universidade/LEI/ATS_LUIS/trabalhos_POO/trabalhos_POO/TP2/out/production/TP2
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\deploy.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\access-bridge-64.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\cldrdata.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\dnsns.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jaccess.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jfxrt.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\localedata.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\nashorn.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunec.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunjce_provider.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunmscapi.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunpkcs11.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\zipfs.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\javaws.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfxswt.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\management-agent.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\plugin.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar
+  - C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP2\out\production\TP2
+* Finished analyzing classpath
+* Generating tests for class Utilizador
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+[MASTER] 10:50:12.187 [pool-2-thread-1] WARN  TestSuiteSerialization - Cannot load tests because file does not exist: C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP2\.evosuite\evosuite-seeds\Utilizador.seed
+* Loaded 0 tests from C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP2\.evosuite\evosuite-seeds\Utilizador.seed
+* Total number of test goals: 
+  - Line 252
+  - Branch 145
+  - Exception 0
+  - MutationFactory 314
+  - Output 241
+  - Method 67
+  - MethodNoException 67
+  - CBranchFitnessFactory 145
+* Using seed 1716544200778
+* Starting evolution
+[MASTER] 10:50:12.403 [pool-2-thread-1] WARN  TimeController - Phase INITIALIZATION lasted too long, 6 seconds more than allowed.
+* Search finished after 41s and 27 generations, 12393 statements, best individual has fitness: 345.678787867612
+* Writing sequences to pool
+* Minimizing test suite
+[MASTER] 10:51:00.457 [pool-2-thread-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 88%
+* Total number of goals: 252
+* Number of covered goals: 223
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 73%
+* Total number of goals: 145
+* Number of covered goals: 106
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 21
+* Number of covered goals: 21
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 73%
+* Total number of goals: 314
+* Number of covered goals: 229
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 43%
+* Total number of goals: 241
+* Number of covered goals: 104
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 67
+* Number of covered goals: 67
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 90%
+* Total number of goals: 67
+* Number of covered goals: 60
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 73%
+* Total number of goals: 145
+* Number of covered goals: 106
+* Generated 94 tests with total length 1373
+* Resulting test suite's coverage: 80% (average coverage for all fitness functions)
+* Generating assertions
+[MASTER] 10:51:04.908 [pool-2-thread-1] WARN  SimpleMutationAssertionGenerator - Assertion minimization is taking too long (0.8036% of time used, but only 2/94 tests minimized), falling back to using all assertions
+[MASTER] 10:51:05.894 [pool-2-thread-1] WARN  SimpleMutationAssertionGenerator - Reached maximum time to generate assertions, aborting assertion generation
+* Resulting test suite's mutation score: 9%
+* Compiling and checking tests
+[MASTER] 10:51:06.055 [pool-2-thread-1] WARN  TimeController - Current phase JUNIT_CHECK could run up to 5s, but only 4s are left
+[MASTER] 10:51:08.407 [pool-2-thread-1] WARN  TimeController - Current phase WRITING_TESTS could run up to 5s, but only 2s are left
+* Writing JUnit test case 'Utilizador_ESTest' to C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP2\.evosuite\tmp_2024_05_24_10_49_50\tests
+* Done!
+

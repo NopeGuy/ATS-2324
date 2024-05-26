@@ -1,0 +1,133 @@
+* Starting client
+* Connecting to master process on port 9557
+* Analyzing classpath: 
+  - C:/Users/luis-/Desktop/Universidade/LEI/ATS_LUIS/trabalhos_POO/trabalhos_POO/TP2/out/production/TP2
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\deploy.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\access-bridge-64.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\cldrdata.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\dnsns.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jaccess.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\jfxrt.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\localedata.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\nashorn.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunec.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunjce_provider.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunmscapi.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\sunpkcs11.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\zipfs.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\javaws.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfxswt.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\management-agent.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\plugin.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar
+  - C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar
+  - C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP2\out\production\TP2
+* Finished analyzing classpath
+* Generating tests for class Controlador
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+[MASTER] 10:50:12.253 [pool-2-thread-1] WARN  TestSuiteSerialization - Cannot load tests because file does not exist: C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP2\.evosuite\evosuite-seeds\Controlador.seed
+* Loaded 0 tests from C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP2\.evosuite\evosuite-seeds\Controlador.seed
+* Total number of test goals: 
+  - Line 473
+  - Branch 251
+  - Exception 0
+  - MutationFactory 297
+  - Output 8
+  - Method 28
+  - MethodNoException 28
+  - CBranchFitnessFactory 251
+* Using seed 1716544200799
+* Starting evolution
+[MASTER] 10:50:12.510 [pool-2-thread-1] WARN  TimeController - Phase INITIALIZATION lasted too long, 4 seconds more than allowed.
+* Search finished after 50s and 0 generations, 30 statements, best individual has fitness: 1408.5689033189033
+* Writing sequences to pool
+[MASTER] 10:51:03.126 [pool-2-thread-1] WARN  TimeController - Phase SEARCH lasted too long, 5 seconds more than allowed.
+* Minimizing test suite
+[MASTER] 10:51:15.438 [pool-2-thread-1] WARN  TestSuiteMinimizer - Minimization timeout. Roll back to original test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 16%
+* Total number of goals: 473
+* Number of covered goals: 78
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 6%
+* Total number of goals: 251
+* Number of covered goals: 14
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 13
+* Number of covered goals: 13
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 10%
+* Total number of goals: 297
+* Number of covered goals: 29
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 0%
+* Total number of goals: 8
+* Number of covered goals: 0
+* Coverage analysis for criterion METHOD
+[MASTER] 10:51:19.850 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] Controlador.escolha()V
+[MASTER] 10:51:19.851 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] Controlador.escolha_carrinho()V
+[MASTER] 10:51:19.851 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] Controlador.escolha_faturas()V
+[MASTER] 10:51:19.852 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] Controlador.escolha_tipo()V
+[MASTER] 10:51:19.852 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] Controlador.escolha_transportadora()V
+[MASTER] 10:51:19.852 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] Controlador.escolha_tshit()V
+[MASTER] 10:51:19.852 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] Controlador.escolha_venda_tipo()V
+[MASTER] 10:51:19.853 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] Controlador.escolha_venda_tshirt()V
+[MASTER] 10:51:19.853 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] Controlador.povoar()V
+[MASTER] 10:51:19.854 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] Controlador.registar()V
+[MASTER] 10:51:19.854 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHOD] Controlador.salvarEstado()V
+* Coverage of criterion METHOD: 86%
+* Total number of goals: 28
+* Number of covered goals: 24
+* Coverage analysis for criterion METHODNOEXCEPTION
+[MASTER] 10:51:20.578 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Controlador.escolha()V
+[MASTER] 10:51:20.578 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Controlador.escolha_carrinho()V
+[MASTER] 10:51:20.578 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Controlador.escolha_faturas()V
+[MASTER] 10:51:20.578 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Controlador.escolha_pesquica()V
+[MASTER] 10:51:20.579 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Controlador.escolha_query()V
+[MASTER] 10:51:20.579 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Controlador.escolha_tipo()V
+[MASTER] 10:51:20.579 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Controlador.escolha_transportadora()V
+[MASTER] 10:51:20.579 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Controlador.escolha_tshit()V
+[MASTER] 10:51:20.579 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Controlador.escolha_venda()V
+[MASTER] 10:51:20.580 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Controlador.escolha_venda_malas()V
+[MASTER] 10:51:20.580 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Controlador.escolha_venda_sapatilhas()V
+[MASTER] 10:51:20.580 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Controlador.escolha_venda_tipo()V
+[MASTER] 10:51:20.580 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Controlador.escolha_venda_tshirt()V
+[MASTER] 10:51:20.580 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Controlador.inicio_controlador()V
+[MASTER] 10:51:20.581 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Controlador.login()Z
+[MASTER] 10:51:20.581 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Controlador.povoar()V
+[MASTER] 10:51:20.581 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Controlador.registar()V
+[MASTER] 10:51:20.581 [pool-2-thread-1] WARN  CoverageArchive - A solution with a timeout/exception result has been added to the archive. The covered goal was [METHODNOEX] Controlador.salvarEstado()V
+* Coverage of criterion METHODNOEXCEPTION: 79%
+* Total number of goals: 28
+* Number of covered goals: 22
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 4%
+* Total number of goals: 251
+* Number of covered goals: 11
+* Generated 13 tests with total length 321
+* Resulting test suite's coverage: 24% (average coverage for all fitness functions)
+* Generating assertions
+[MASTER] 10:51:22.037 [pool-2-thread-1] WARN  TimeController - Current phase ASSERTION_GENERATION could run up to 7s, but only 5s are left
+[MASTER] 10:51:28.030 [pool-2-thread-1] WARN  SimpleMutationAssertionGenerator - Reached maximum time to generate assertions, aborting assertion generation
+* Resulting test suite's mutation score: 0%
+* Compiling and checking tests
+[MASTER] 10:51:28.211 [pool-2-thread-1] WARN  TimeController - Current phase JUNIT_CHECK could run up to 7s, but only 0s are left
+[MASTER] 10:51:28.219 [pool-2-thread-1] WARN  TimeController - Current phase WRITING_TESTS could run up to 7s, but only 0s are left
+* Writing JUnit test case 'Controlador_ESTest' to C:\Users\luis-\Desktop\Universidade\LEI\ATS_LUIS\trabalhos_POO\trabalhos_POO\TP2\.evosuite\tmp_2024_05_24_10_49_50\tests
+* Done!
+

@@ -1,0 +1,3 @@
+[MASTER] 10:53:34.277 [main] ERROR ExternalProcessHandler - Class Transportadora. Clients have not finished yet, although a timeout occurred.
+ClientNode: JUNIT_CHECK
+

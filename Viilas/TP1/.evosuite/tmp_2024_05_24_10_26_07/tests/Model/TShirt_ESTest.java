@@ -8,8 +8,7 @@ package Model;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import static org.evosuite.runtime.EvoAssertions.*;
-import Model.Artigo;
-import Model.TShirt;
+
 import java.time.LocalDate;
 import java.time.Period;
 import java.time.chrono.Chronology;
@@ -30,8 +29,8 @@ public class TShirt_ESTest extends TShirt_ESTest_scaffolding {
       TShirt.Tamanho tShirt_Tamanho0 = TShirt.Tamanho.L;
       TShirt.Padrao tShirt_Padrao0 = TShirt.Padrao.RISCAS;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.USADO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.SATISFATÓRIO;
-      TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, ";QvR!1uuiS09PH", artigo_Estado0, (-1754), artigo_Avaliação0, ";QvR!1uuiS09PH", ";QvR!1uuiS09PH", "9k>0[SJ", (-1754), (-1818.2481716918523), "Model.TShirt$Padrao");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.SATISFATÓRIO;
+      TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, ";QvR!1uuiS09PH", artigo_Estado0, (-1754), artigo_Avaliacao0, ";QvR!1uuiS09PH", ";QvR!1uuiS09PH", "9k>0[SJ", (-1754), (-1818.2481716918523), "Model.TShirt$Padrao");
       FormatStyle formatStyle0 = FormatStyle.SHORT;
       DateTimeFormatter dateTimeFormatter0 = DateTimeFormatter.ofLocalizedDate(formatStyle0);
       Chronology chronology0 = dateTimeFormatter0.getChronology();
@@ -45,8 +44,8 @@ public class TShirt_ESTest extends TShirt_ESTest_scaffolding {
       TShirt.Tamanho tShirt_Tamanho0 = TShirt.Tamanho.L;
       TShirt.Padrao tShirt_Padrao0 = TShirt.Padrao.PALMEIRAS;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.NOVO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.SATISFATÓRIO;
-      TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, ")KwL%[J>Zc", artigo_Estado0, (-682), artigo_Avaliação0, ")KwL%[J>Zc", "Pre\u00E7o Final: ", ")KwL%[J>Zc", 0.0, 2690.5124041028494, "+3C|e");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.SATISFATÓRIO;
+      TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, ")KwL%[J>Zc", artigo_Estado0, (-682), artigo_Avaliacao0, ")KwL%[J>Zc", "Pre\u00E7o Final: ", ")KwL%[J>Zc", 0.0, 2690.5124041028494, "+3C|e");
       boolean boolean0 = tShirt0.equals(tShirt0);
       assertTrue(boolean0);
   }
@@ -56,8 +55,8 @@ public class TShirt_ESTest extends TShirt_ESTest_scaffolding {
       TShirt.Tamanho tShirt_Tamanho0 = TShirt.Tamanho.L;
       TShirt.Padrao tShirt_Padrao0 = TShirt.Padrao.RISCAS;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.NOVO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.BOM;
-      TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, (String) null, artigo_Estado0, 399, artigo_Avaliação0, (String) null, "Avalia\u00E7\u00E3o: ", (String) null, 399, 0.5, (String) null);
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.BOM;
+      TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, (String) null, artigo_Estado0, 399, artigo_Avaliacao0, (String) null, "Avalia\u00E7\u00E3o: ", (String) null, 399, 0.5, (String) null);
       double double0 = tShirt0.precoFinal((LocalDate) null);
       assertEquals(399.0, double0, 0.01);
   }
@@ -76,8 +75,8 @@ public class TShirt_ESTest extends TShirt_ESTest_scaffolding {
       TShirt.Padrao tShirt_Padrao0 = TShirt.Padrao.PALMEIRAS;
       TShirt.Tamanho tShirt_Tamanho0 = TShirt.Tamanho.XL;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.NOVO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.BOM;
-      TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, "SATISFAT\u00D3RIO", artigo_Estado0, 3, artigo_Avaliação0, "Ex-gkDY+8L%wQoG=eHT", "Ex-gkDY+8L%wQoG=eHT", "Ex-gkDY+8L%wQoG=eHT", 1352.750832, 1104.9, "");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.BOM;
+      TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, "SATISFAT\u00D3RIO", artigo_Estado0, 3, artigo_Avaliacao0, "Ex-gkDY+8L%wQoG=eHT", "Ex-gkDY+8L%wQoG=eHT", "Ex-gkDY+8L%wQoG=eHT", 1352.750832, 1104.9, "");
       TShirt.Padrao tShirt_Padrao1 = tShirt0.getPadrao();
       assertSame(tShirt_Padrao1, tShirt_Padrao0);
   }
@@ -87,8 +86,8 @@ public class TShirt_ESTest extends TShirt_ESTest_scaffolding {
       TShirt.Tamanho tShirt_Tamanho0 = TShirt.Tamanho.XL;
       TShirt.Padrao tShirt_Padrao0 = TShirt.Padrao.LISO;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.NOVO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.SATISFATÓRIO;
-      TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, "", artigo_Estado0, (-1), artigo_Avaliação0, "", "", "", (-1), (-1), "$_h85M-We");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.SATISFATÓRIO;
+      TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, "", artigo_Estado0, (-1), artigo_Avaliacao0, "", "", "", (-1), (-1), "$_h85M-We");
       TShirt tShirt1 = tShirt0.clone();
       assertTrue(tShirt1.equals((Object)tShirt0));
   }
@@ -122,8 +121,8 @@ public class TShirt_ESTest extends TShirt_ESTest_scaffolding {
       TShirt.Tamanho tShirt_Tamanho0 = TShirt.Tamanho.S;
       TShirt.Padrao tShirt_Padrao0 = TShirt.Padrao.LISO;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.USADO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.SATISFATÓRIO;
-      TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, "", artigo_Estado0, 0, artigo_Avaliação0, "", "", "", 741.0, 741.0, "");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.SATISFATÓRIO;
+      TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, "", artigo_Estado0, 0, artigo_Avaliacao0, "", "", "", 741.0, 741.0, "");
       TShirt tShirt1 = tShirt0.clone();
       assertTrue(tShirt1.equals((Object)tShirt0));
   }
@@ -133,8 +132,8 @@ public class TShirt_ESTest extends TShirt_ESTest_scaffolding {
       TShirt.Tamanho tShirt_Tamanho0 = TShirt.Tamanho.M;
       TShirt.Padrao tShirt_Padrao0 = TShirt.Padrao.LISO;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.USADO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.BOM;
-      TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, "Descri\u00E7\u00E3o: ", artigo_Estado0, (-5902), artigo_Avaliação0, "Tamanho: ", (String) null, "Tamanho: ", 1.0, (-1.0), "Lm6Y:|xN[^GT5KC!r");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.BOM;
+      TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, "Descri\u00E7\u00E3o: ", artigo_Estado0, (-5902), artigo_Avaliacao0, "Tamanho: ", (String) null, "Tamanho: ", 1.0, (-1.0), "Lm6Y:|xN[^GT5KC!r");
       TShirt tShirt1 = tShirt0.clone();
       assertTrue(tShirt1.equals((Object)tShirt0));
   }
@@ -166,8 +165,8 @@ public class TShirt_ESTest extends TShirt_ESTest_scaffolding {
       TShirt.Tamanho tShirt_Tamanho0 = TShirt.Tamanho.S;
       TShirt.Padrao tShirt_Padrao0 = TShirt.Padrao.RISCAS;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.USADO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.SATISFATÓRIO;
-      TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, "Pre\u00E7o Final: ", artigo_Estado0, 3151, artigo_Avaliação0, "Pre\u00E7o Final: ", "rO", "Pre\u00E7o Final: ", (-1017.26952), 3151, "Pre\u00E7o Final: ");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.SATISFATÓRIO;
+      TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, "Pre\u00E7o Final: ", artigo_Estado0, 3151, artigo_Avaliacao0, "Pre\u00E7o Final: ", "rO", "Pre\u00E7o Final: ", (-1017.26952), 3151, "Pre\u00E7o Final: ");
       LocalDate localDate0 = MockLocalDate.ofEpochDay(3151);
       double double0 = tShirt0.precoFinal(localDate0);
       assertEquals((-508.63476), double0, 0.01);
@@ -213,10 +212,10 @@ public class TShirt_ESTest extends TShirt_ESTest_scaffolding {
       TShirt.Padrao tShirt_Padrao0 = TShirt.Padrao.PALMEIRAS;
       TShirt.Tamanho tShirt_Tamanho0 = TShirt.Tamanho.XL;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.NOVO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.BOM;
-      TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, "SATISFAT\u00D3RIO", artigo_Estado0, 3, artigo_Avaliação0, "Ex-gkDY+8L%wQoG=eHT", "Ex-gkDY+8L%wQoG=eHT", "Ex-gkDY+8L%wQoG=eHT", 3, 1104.9, "Ex-gkDY+8L%wQoG=eHT");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.BOM;
+      TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, "SATISFAT\u00D3RIO", artigo_Estado0, 3, artigo_Avaliacao0, "Ex-gkDY+8L%wQoG=eHT", "Ex-gkDY+8L%wQoG=eHT", "Ex-gkDY+8L%wQoG=eHT", 3, 1104.9, "Ex-gkDY+8L%wQoG=eHT");
       TShirt.Tamanho tShirt_Tamanho1 = TShirt.Tamanho.M;
-      TShirt tShirt1 = new TShirt(tShirt_Tamanho1, tShirt_Padrao0, "SATISFAT\u00D3RIO", artigo_Estado0, 3, artigo_Avaliação0, "Ex-gkDY+8L%wQoG=eHT", "Ex-gkDY+8L%wQoG=eHT", "Ex-gkDY+8L%wQoG=eHT", 3, 3, "SATISFAT\u00D3RIO");
+      TShirt tShirt1 = new TShirt(tShirt_Tamanho1, tShirt_Padrao0, "SATISFAT\u00D3RIO", artigo_Estado0, 3, artigo_Avaliacao0, "Ex-gkDY+8L%wQoG=eHT", "Ex-gkDY+8L%wQoG=eHT", "Ex-gkDY+8L%wQoG=eHT", 3, 3, "SATISFAT\u00D3RIO");
       boolean boolean0 = tShirt0.equals(tShirt1);
       assertFalse(boolean0);
   }
@@ -241,8 +240,8 @@ public class TShirt_ESTest extends TShirt_ESTest_scaffolding {
       TShirt.Tamanho tShirt_Tamanho0 = TShirt.Tamanho.L;
       TShirt.Padrao tShirt_Padrao0 = TShirt.Padrao.PALMEIRAS;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.NOVO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.SATISFATÓRIO;
-      TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, ")KwL%[J>Zc", artigo_Estado0, (-682), artigo_Avaliação0, ")KwL%[J>Zc", "Pre\u00E7o Final: ", ")KwL%[J>Zc", 0.0, 2690.5124041028494, "+3C|e");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.SATISFATÓRIO;
+      TShirt tShirt0 = new TShirt(tShirt_Tamanho0, tShirt_Padrao0, ")KwL%[J>Zc", artigo_Estado0, (-682), artigo_Avaliacao0, ")KwL%[J>Zc", "Pre\u00E7o Final: ", ")KwL%[J>Zc", 0.0, 2690.5124041028494, "+3C|e");
       TShirt tShirt1 = new TShirt(tShirt0);
       assertTrue(tShirt1.equals((Object)tShirt0));
       

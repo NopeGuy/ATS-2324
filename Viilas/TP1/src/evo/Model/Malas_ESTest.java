@@ -8,8 +8,7 @@ package Model;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import static org.evosuite.runtime.EvoAssertions.*;
-import Model.Artigo;
-import Model.Malas;
+
 import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.time.Period;
@@ -18,7 +17,6 @@ import java.time.ZoneOffset;
 import java.time.chrono.IsoChronology;
 import org.evosuite.runtime.EvoRunner;
 import org.evosuite.runtime.EvoRunnerParameters;
-import org.evosuite.runtime.System;
 import org.evosuite.runtime.mock.java.time.MockLocalDate;
 import org.evosuite.runtime.mock.java.time.chrono.MockIsoChronology;
 import org.junit.runner.RunWith;
@@ -30,8 +28,8 @@ public class Malas_ESTest extends Malas_ESTest_scaffolding {
   public void test00()  throws Throwable  {
       Malas.Tipos_Malas malas_Tipos_Malas0 = Malas.Tipos_Malas.NORMAL;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.USADO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.IMPECÁVEL;
-      Malas malas0 = new Malas(malas_Tipos_Malas0, 10.0F, "e;WRP5OX[MeW", (-294), "e;WRP5OX[MeW", artigo_Estado0, (-2753), artigo_Avaliação0, "e;WRP5OX[MeW", "e;WRP5OX[MeW", "e;WRP5OX[MeW", (-2753), 0.0, "e;WRP5OX[MeW");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.IMPECÁVEL;
+      Malas malas0 = new Malas(malas_Tipos_Malas0, 10.0F, "e;WRP5OX[MeW", (-294), "e;WRP5OX[MeW", artigo_Estado0, (-2753), artigo_Avaliacao0, "e;WRP5OX[MeW", "e;WRP5OX[MeW", "e;WRP5OX[MeW", (-2753), 0.0, "e;WRP5OX[MeW");
       malas0.setMarca("e;WRP5OX[MeW");
       Malas malas1 = new Malas(malas0);
       Malas.Tipos_Malas malas_Tipos_Malas1 = Malas.Tipos_Malas.NORMAL;
@@ -62,8 +60,8 @@ public class Malas_ESTest extends Malas_ESTest_scaffolding {
   public void test01()  throws Throwable  {
       Malas.Tipos_Malas malas_Tipos_Malas0 = Malas.Tipos_Malas.NORMAL;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.USADO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.IMPECÁVEL;
-      Malas malas0 = new Malas(malas_Tipos_Malas0, 10.0F, "e;WRP5OX[MeW", (-294), "e;WRP5OX[MeW", artigo_Estado0, (-2747), artigo_Avaliação0, "e;WRP5OX[MeW", "e;WRP5OX[MeW", "e;WRP5OX[MeW", (-2747), (-294), "e;WRP5OX[MeW");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.IMPECÁVEL;
+      Malas malas0 = new Malas(malas_Tipos_Malas0, 10.0F, "e;WRP5OX[MeW", (-294), "e;WRP5OX[MeW", artigo_Estado0, (-2747), artigo_Avaliacao0, "e;WRP5OX[MeW", "e;WRP5OX[MeW", "e;WRP5OX[MeW", (-2747), (-294), "e;WRP5OX[MeW");
       malas0.setMarca("e;WRP5OX[MeW");
       Malas malas1 = new Malas(malas0);
       Malas.Tipos_Malas malas_Tipos_Malas1 = Malas.Tipos_Malas.PREMIUM;
@@ -93,12 +91,12 @@ public class Malas_ESTest extends Malas_ESTest_scaffolding {
   public void test02()  throws Throwable  {
       Malas.Tipos_Malas malas_Tipos_Malas0 = Malas.Tipos_Malas.NORMAL;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.NOVO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.SATISFATÓRIO;
-      Malas malas0 = new Malas(malas_Tipos_Malas0, 1905.8F, "A?|", (-503), "YI'Hq!}/E2<4", artigo_Estado0, (-1), artigo_Avaliação0, "A?|", "", "", 1905.8F, 1905.8F, (String) null);
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.SATISFATÓRIO;
+      Malas malas0 = new Malas(malas_Tipos_Malas0, 1905.8F, "A?|", (-503), "YI'Hq!}/E2<4", artigo_Estado0, (-1), artigo_Avaliacao0, "A?|", "", "", 1905.8F, 1905.8F, (String) null);
       Malas malas1 = new Malas(malas0);
-      Artigo.Avaliação artigo_Avaliação1 = Artigo.Avaliação.BOM;
+      Artigo.Avaliacao artigo_Avaliacao1 = Artigo.Avaliacao.BOM;
       malas1.setMaterial((String) null);
-      Malas malas2 = new Malas(malas_Tipos_Malas0, 1905.8F, "", (-1968526676), (String) null, artigo_Estado0, (-503), artigo_Avaliação1, "IkD?q{60D2O?", "&", "", (-1968526676), (-503), "");
+      Malas malas2 = new Malas(malas_Tipos_Malas0, 1905.8F, "", (-1968526676), (String) null, artigo_Estado0, (-503), artigo_Avaliacao1, "IkD?q{60D2O?", "&", "", (-1968526676), (-503), "");
       // Undeclared exception!
       try { 
         malas1.equals(malas2);
@@ -135,9 +133,9 @@ public class Malas_ESTest extends Malas_ESTest_scaffolding {
       Malas.Tipos_Malas.values();
       Malas.Tipos_Malas malas_Tipos_Malas0 = Malas.Tipos_Malas.NORMAL;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.USADO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.IMPECÁVEL;
-      Malas malas0 = new Malas(malas_Tipos_Malas0, (-1153), "Dimens\u00F5es: ", 2, "Dimens\u00F5es: ", artigo_Estado0, 2145548786, artigo_Avaliação0, "", (String) null, "9PrlAY", 2145548786, (-1153), "\n");
-      Malas malas1 = new Malas(malas_Tipos_Malas0, 0.0F, "", 2272, "\n", artigo_Estado0, 2272, artigo_Avaliação0, "", (String) null, (String) null, 0.0, (-131.858329), "Model.Malas$Tipos_Malas");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.IMPECÁVEL;
+      Malas malas0 = new Malas(malas_Tipos_Malas0, (-1153), "Dimens\u00F5es: ", 2, "Dimens\u00F5es: ", artigo_Estado0, 2145548786, artigo_Avaliacao0, "", (String) null, "9PrlAY", 2145548786, (-1153), "\n");
+      Malas malas1 = new Malas(malas_Tipos_Malas0, 0.0F, "", 2272, "\n", artigo_Estado0, 2272, artigo_Avaliacao0, "", (String) null, (String) null, 0.0, (-131.858329), "Model.Malas$Tipos_Malas");
       malas0.equals(malas1);
       malas0.equals("Rb*j");
       LocalDate localDate0 = MockLocalDate.now();
@@ -149,8 +147,8 @@ public class Malas_ESTest extends Malas_ESTest_scaffolding {
   public void test05()  throws Throwable  {
       Malas.Tipos_Malas malas_Tipos_Malas0 = Malas.Tipos_Malas.NORMAL;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.NOVO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.SATISFATÓRIO;
-      Malas malas0 = new Malas(malas_Tipos_Malas0, (-1527.2965F), (String) null, 0, "do3C&~q3Z&", artigo_Estado0, 0, artigo_Avaliação0, (String) null, "", "3Zz3Z1}pw", (-1527.2965F), 0.0, "f-Cq>H");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.SATISFATÓRIO;
+      Malas malas0 = new Malas(malas_Tipos_Malas0, (-1527.2965F), (String) null, 0, "do3C&~q3Z&", artigo_Estado0, 0, artigo_Avaliacao0, (String) null, "", "3Zz3Z1}pw", (-1527.2965F), 0.0, "f-Cq>H");
       Malas malas1 = new Malas(malas0);
       malas1.setId(0);
       LocalDate localDate0 = MockLocalDate.ofEpochDay(115L);
@@ -162,8 +160,8 @@ public class Malas_ESTest extends Malas_ESTest_scaffolding {
       Malas malas0 = new Malas();
       malas0.setDescricao("");
       Malas malas1 = new Malas(malas0);
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.SATISFATÓRIO;
-      malas1.setAvaliacao(artigo_Avaliação0);
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.SATISFATÓRIO;
+      malas1.setAvaliacao(artigo_Avaliacao0);
       malas0.setTipo("?{");
       malas0.setTransportadora("");
       Malas malas2 = malas1.clone();
@@ -224,8 +222,8 @@ public class Malas_ESTest extends Malas_ESTest_scaffolding {
   public void test09()  throws Throwable  {
       Malas.Tipos_Malas malas_Tipos_Malas0 = Malas.Tipos_Malas.PREMIUM;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.USADO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.SATISFATÓRIO;
-      Malas malas0 = new Malas(malas_Tipos_Malas0, 2400.267F, "3'B{$E_EBEr", (-857), "{8&.(", artigo_Estado0, 12, artigo_Avaliação0, "", "3?CS\u0002", "", 0.0, (-1.0), "k}aKrZw");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.SATISFATÓRIO;
+      Malas malas0 = new Malas(malas_Tipos_Malas0, 2400.267F, "3'B{$E_EBEr", (-857), "{8&.(", artigo_Estado0, 12, artigo_Avaliacao0, "", "3?CS\u0002", "", 0.0, (-1.0), "k}aKrZw");
       Malas malas1 = malas0.clone();
       Period period0 = Period.ofYears(12);
       IsoChronology isoChronology0 = period0.getChronology();
@@ -242,9 +240,9 @@ public class Malas_ESTest extends Malas_ESTest_scaffolding {
       Malas.Tipos_Malas malas_Tipos_Malas0 = Malas.Tipos_Malas.NORMAL;
       int int0 = 2076;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.USADO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.BOM;
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.BOM;
       String string0 = "BOM";
-      Malas malas0 = new Malas(malas_Tipos_Malas0, 0.0F, ",g~d-1^!,@RU", 2076, "", artigo_Estado0, 2076, artigo_Avaliação0, "BOM", "X;<A*}%.k=0F1 %/S", "l~kR-&WRcqIEim", 2076, 0.0F, "");
+      Malas malas0 = new Malas(malas_Tipos_Malas0, 0.0F, ",g~d-1^!,@RU", 2076, "", artigo_Estado0, 2076, artigo_Avaliacao0, "BOM", "X;<A*}%.k=0F1 %/S", "l~kR-&WRcqIEim", 2076, 0.0F, "");
       malas0.setDescricao("4~6/B`(0");
       malas0.setTransportadora((String) null);
       Malas malas1 = new Malas(malas0);
@@ -330,9 +328,9 @@ public class Malas_ESTest extends Malas_ESTest_scaffolding {
   public void test13()  throws Throwable  {
       Malas.Tipos_Malas malas_Tipos_Malas0 = Malas.Tipos_Malas.NORMAL;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.NOVO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.SATISFATÓRIO;
-      Malas malas0 = new Malas(malas_Tipos_Malas0, 136.0F, "5?k]e51y", 2, "5?k]e51y", artigo_Estado0, 0, artigo_Avaliação0, "", "5?k]e51y", "", (-1.0), 1.0, "");
-      malas0.setAvaliacao(artigo_Avaliação0);
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.SATISFATÓRIO;
+      Malas malas0 = new Malas(malas_Tipos_Malas0, 136.0F, "5?k]e51y", 2, "5?k]e51y", artigo_Estado0, 0, artigo_Avaliacao0, "", "5?k]e51y", "", (-1.0), 1.0, "");
+      malas0.setAvaliacao(artigo_Avaliacao0);
       malas0.setCorrecaoPreco((-4237.211243884));
       LocalDate localDate0 = MockLocalDate.of(2, 2, 2);
       malas0.toString(localDate0);
@@ -351,8 +349,8 @@ public class Malas_ESTest extends Malas_ESTest_scaffolding {
   public void test14()  throws Throwable  {
       Malas.Tipos_Malas malas_Tipos_Malas0 = Malas.Tipos_Malas.NORMAL;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.NOVO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.IMPECÁVEL;
-      Malas malas0 = new Malas(malas_Tipos_Malas0, 1042.723F, "v,he;/x", 1, "v,he;/x", artigo_Estado0, 1, artigo_Avaliação0, "94O[@[DZ7M-e[", "v,he;/x", (String) null, 1042.723F, 1042.723F, (String) null);
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.IMPECÁVEL;
+      Malas malas0 = new Malas(malas_Tipos_Malas0, 1042.723F, "v,he;/x", 1, "v,he;/x", artigo_Estado0, 1, artigo_Avaliacao0, "94O[@[DZ7M-e[", "v,he;/x", (String) null, 1042.723F, 1042.723F, (String) null);
       malas0.getAno_da_colecao();
   }
 
@@ -360,8 +358,8 @@ public class Malas_ESTest extends Malas_ESTest_scaffolding {
   public void test15()  throws Throwable  {
       Malas.Tipos_Malas malas_Tipos_Malas0 = Malas.Tipos_Malas.PREMIUM;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.USADO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.SATISFATÓRIO;
-      Malas malas0 = new Malas(malas_Tipos_Malas0, 10.0F, "Model.Malas$Tipos_Malas", (-2528), "Model.Malas$Tipos_Malas", artigo_Estado0, 0, artigo_Avaliação0, (String) null, "N=Ys\" (Z:oENe", "Model.Malas$Tipos_Malas", (-4916.654912), (-462.46), "USADO");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.SATISFATÓRIO;
+      Malas malas0 = new Malas(malas_Tipos_Malas0, 10.0F, "Model.Malas$Tipos_Malas", (-2528), "Model.Malas$Tipos_Malas", artigo_Estado0, 0, artigo_Avaliacao0, (String) null, "N=Ys\" (Z:oENe", "Model.Malas$Tipos_Malas", (-4916.654912), (-462.46), "USADO");
       malas0.getAno_da_colecao();
   }
 
@@ -369,8 +367,8 @@ public class Malas_ESTest extends Malas_ESTest_scaffolding {
   public void test16()  throws Throwable  {
       Malas.Tipos_Malas malas_Tipos_Malas0 = Malas.Tipos_Malas.NORMAL;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.NOVO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.SATISFATÓRIO;
-      Malas malas0 = new Malas(malas_Tipos_Malas0, 0.0F, "Ano da cole\u00E7\u00E3o: ", (-1), "BOM", artigo_Estado0, (-1), artigo_Avaliação0, (String) null, "Ano da cole\u00E7\u00E3o: ", "", 0.0F, 509.94681038, "Ccsj9Qxo>ZS");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.SATISFATÓRIO;
+      Malas malas0 = new Malas(malas_Tipos_Malas0, 0.0F, "Ano da cole\u00E7\u00E3o: ", (-1), "BOM", artigo_Estado0, (-1), artigo_Avaliacao0, (String) null, "Ano da cole\u00E7\u00E3o: ", "", 0.0F, 509.94681038, "Ccsj9Qxo>ZS");
       malas0.getMaterial();
   }
 
@@ -378,8 +376,8 @@ public class Malas_ESTest extends Malas_ESTest_scaffolding {
   public void test17()  throws Throwable  {
       Malas.Tipos_Malas malas_Tipos_Malas0 = Malas.Tipos_Malas.NORMAL;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.USADO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.IMPECÁVEL;
-      Malas malas0 = new Malas(malas_Tipos_Malas0, 10.0F, "e;WRP5OX[MeW", (-294), "e;WRP5OX[MeW", artigo_Estado0, (-2747), artigo_Avaliação0, "e;WRP5OX[MeW", "e;WRP5OX[MeW", "e;WRP5OX[MeW", (-2747), 0.0, "e;WRP5OX[MeW");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.IMPECÁVEL;
+      Malas malas0 = new Malas(malas_Tipos_Malas0, 10.0F, "e;WRP5OX[MeW", (-294), "e;WRP5OX[MeW", artigo_Estado0, (-2747), artigo_Avaliacao0, "e;WRP5OX[MeW", "e;WRP5OX[MeW", "e;WRP5OX[MeW", (-2747), 0.0, "e;WRP5OX[MeW");
       malas0.setMarca("e;WRP5OX[MeW");
       Malas malas1 = new Malas(malas0);
       Malas.Tipos_Malas malas_Tipos_Malas1 = Malas.Tipos_Malas.PREMIUM;
@@ -409,10 +407,10 @@ public class Malas_ESTest extends Malas_ESTest_scaffolding {
   public void test18()  throws Throwable  {
       Malas.Tipos_Malas malas_Tipos_Malas0 = Malas.Tipos_Malas.PREMIUM;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.NOVO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.SATISFATÓRIO;
-      Malas malas0 = new Malas(malas_Tipos_Malas0, 610.1973F, "", 0, "", artigo_Estado0, 0, artigo_Avaliação0, "", "", "", 1109.1, (-435.4624377696935), "");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.SATISFATÓRIO;
+      Malas malas0 = new Malas(malas_Tipos_Malas0, 610.1973F, "", 0, "", artigo_Estado0, 0, artigo_Avaliacao0, "", "", "", 1109.1, (-435.4624377696935), "");
       Malas malas1 = new Malas(malas0);
-      malas1.setAvaliacao(artigo_Avaliação0);
+      malas1.setAvaliacao(artigo_Avaliacao0);
       malas1.setId(0);
       malas1.setDim(0);
       Malas.Tipos_Malas.values();
@@ -450,8 +448,8 @@ public class Malas_ESTest extends Malas_ESTest_scaffolding {
   public void test20()  throws Throwable  {
       Malas.Tipos_Malas malas_Tipos_Malas0 = Malas.Tipos_Malas.PREMIUM;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.USADO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.SATISFATÓRIO;
-      Malas malas0 = new Malas(malas_Tipos_Malas0, 30.0F, "$VALUES", 0, "$VALUES", artigo_Estado0, 1, artigo_Avaliação0, "$VALUES", "$VALUES", "$VALUES", 844.3515167051861, (-1.0), "r,%~mKi");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.SATISFATÓRIO;
+      Malas malas0 = new Malas(malas_Tipos_Malas0, 30.0F, "$VALUES", 0, "$VALUES", artigo_Estado0, 1, artigo_Avaliacao0, "$VALUES", "$VALUES", "$VALUES", 844.3515167051861, (-1.0), "r,%~mKi");
       malas0.getTipo_mala();
   }
 
@@ -459,8 +457,8 @@ public class Malas_ESTest extends Malas_ESTest_scaffolding {
   public void test21()  throws Throwable  {
       Malas.Tipos_Malas malas_Tipos_Malas0 = Malas.Tipos_Malas.PREMIUM;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.USADO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.SATISFATÓRIO;
-      Malas malas0 = new Malas(malas_Tipos_Malas0, (-2688.51F), "", (-61), "", artigo_Estado0, (-61), artigo_Avaliação0, "", "w#uf%\"Z8", "", (-2688.51F), (-2688.51F), "w#uf%\"Z8");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.SATISFATÓRIO;
+      Malas malas0 = new Malas(malas_Tipos_Malas0, (-2688.51F), "", (-61), "", artigo_Estado0, (-61), artigo_Avaliacao0, "", "w#uf%\"Z8", "", (-2688.51F), (-2688.51F), "w#uf%\"Z8");
       Malas malas1 = new Malas(malas0);
       Malas malas2 = malas1.clone();
       malas0.setPrecoBase(3605.462674);
@@ -476,8 +474,8 @@ public class Malas_ESTest extends Malas_ESTest_scaffolding {
       Malas.Tipos_Malas.values();
       Malas.Tipos_Malas malas_Tipos_Malas0 = Malas.Tipos_Malas.PREMIUM;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.USADO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.IMPECÁVEL;
-      Malas malas0 = new Malas(malas_Tipos_Malas0, (-1107.9584F), "*0yMB(+U&(_%", 1, "*0yMB(+U&(_%", artigo_Estado0, 1, artigo_Avaliação0, "*0yMB(+U&(_%", "*0yMB(+U&(_%", "Pre\u00E7o Base: ", 0.0, 1725.9031621, "Ok>");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.IMPECÁVEL;
+      Malas malas0 = new Malas(malas_Tipos_Malas0, (-1107.9584F), "*0yMB(+U&(_%", 1, "*0yMB(+U&(_%", artigo_Estado0, 1, artigo_Avaliacao0, "*0yMB(+U&(_%", "*0yMB(+U&(_%", "Pre\u00E7o Base: ", 0.0, 1725.9031621, "Ok>");
       malas0.setCorrecaoPreco((-1.0));
       malas0.setDescricao("*0yMB(+U&(_%");
       malas0.setTipo_mala(malas_Tipos_Malas0);
@@ -491,8 +489,8 @@ public class Malas_ESTest extends Malas_ESTest_scaffolding {
   public void test23()  throws Throwable  {
       Malas.Tipos_Malas malas_Tipos_Malas0 = Malas.Tipos_Malas.NORMAL;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.USADO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.SATISFATÓRIO;
-      Malas malas0 = new Malas(malas_Tipos_Malas0, 30.0F, "}t$eK|VKrDsAZ&", (-1880), "}t$eK|VKrDsAZ&", artigo_Estado0, (-1880), artigo_Avaliação0, "}t$eK|VKrDsAZ&", "}t$eK|VKrDsAZ&", "}t$eK|VKrDsAZ&", (-1441.63536873021), (-2299.29679826264), "}t$eK|VKrDsAZ&");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.SATISFATÓRIO;
+      Malas malas0 = new Malas(malas_Tipos_Malas0, 30.0F, "}t$eK|VKrDsAZ&", (-1880), "}t$eK|VKrDsAZ&", artigo_Estado0, (-1880), artigo_Avaliacao0, "}t$eK|VKrDsAZ&", "}t$eK|VKrDsAZ&", "}t$eK|VKrDsAZ&", (-1441.63536873021), (-2299.29679826264), "}t$eK|VKrDsAZ&");
       Malas malas1 = new Malas(malas0);
       malas1.clone();
   }
@@ -565,8 +563,8 @@ public class Malas_ESTest extends Malas_ESTest_scaffolding {
   @Test(timeout = 4000)
   public void test28()  throws Throwable  {
       Malas malas0 = new Malas();
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.SATISFATÓRIO;
-      malas0.setAvaliacao(artigo_Avaliação0);
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.SATISFATÓRIO;
+      malas0.setAvaliacao(artigo_Avaliacao0);
       malas0.setMarca("BAxOM]w[MsP)k6Ub*?");
       Artigo.Estado artigo_Estado0 = Artigo.Estado.NOVO;
       malas0.setTransportadora("\n");
@@ -588,8 +586,8 @@ public class Malas_ESTest extends Malas_ESTest_scaffolding {
   public void test29()  throws Throwable  {
       Malas.Tipos_Malas malas_Tipos_Malas0 = Malas.Tipos_Malas.PREMIUM;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.NOVO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.IMPECÁVEL;
-      Malas malas0 = new Malas(malas_Tipos_Malas0, 0.0F, "", 2050, ")", artigo_Estado0, 398, artigo_Avaliação0, ")", "", "", 774.799726588, 774.799726588, (String) null);
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.IMPECÁVEL;
+      Malas malas0 = new Malas(malas_Tipos_Malas0, 0.0F, "", 2050, ")", artigo_Estado0, 398, artigo_Avaliacao0, ")", "", "", 774.799726588, 774.799726588, (String) null);
       malas0.clone();
   }
 
@@ -611,8 +609,8 @@ public class Malas_ESTest extends Malas_ESTest_scaffolding {
   public void test32()  throws Throwable  {
       Malas.Tipos_Malas malas_Tipos_Malas0 = Malas.Tipos_Malas.PREMIUM;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.USADO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.BOM;
-      Malas malas0 = new Malas(malas_Tipos_Malas0, (-269.4F), "=]F8A5BZ*eQ", 2, "2D?<W(ht", artigo_Estado0, (-871), artigo_Avaliação0, "=]F8A5BZ*eQ", "=]F8A5BZ*eQ", "Y.;\"5S#", (-186.2226), (-1.0), "I;Jh");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.BOM;
+      Malas malas0 = new Malas(malas_Tipos_Malas0, (-269.4F), "=]F8A5BZ*eQ", 2, "2D?<W(ht", artigo_Estado0, (-871), artigo_Avaliacao0, "=]F8A5BZ*eQ", "=]F8A5BZ*eQ", "Y.;\"5S#", (-186.2226), (-1.0), "I;Jh");
       malas0.setDim(2);
       // Undeclared exception!
       try { 
@@ -691,8 +689,8 @@ public class Malas_ESTest extends Malas_ESTest_scaffolding {
   public void test39()  throws Throwable  {
       Malas.Tipos_Malas malas_Tipos_Malas0 = Malas.Tipos_Malas.PREMIUM;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.USADO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.SATISFATÓRIO;
-      Malas malas0 = new Malas(malas_Tipos_Malas0, 1605.25F, (String) null, 0, (String) null, artigo_Estado0, 0, artigo_Avaliação0, (String) null, (String) null, (String) null, 0, 1605.25F, (String) null);
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.SATISFATÓRIO;
+      Malas malas0 = new Malas(malas_Tipos_Malas0, 1605.25F, (String) null, 0, (String) null, artigo_Estado0, 0, artigo_Avaliacao0, (String) null, (String) null, (String) null, 0, 1605.25F, (String) null);
       malas0.getDim();
   }
 
@@ -700,8 +698,8 @@ public class Malas_ESTest extends Malas_ESTest_scaffolding {
   public void test40()  throws Throwable  {
       Malas.Tipos_Malas malas_Tipos_Malas0 = Malas.Tipos_Malas.NORMAL;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.NOVO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.IMPECÁVEL;
-      Malas malas0 = new Malas(malas_Tipos_Malas0, 10.0F, "e;WRP5OX[MeW", (-294), "e;WRP5OX[MeW", artigo_Estado0, (-2747), artigo_Avaliação0, "e;WRP5OX[MeW", "e;WRP5OX[MeW", "e;WRP5OX[MeW", (-2747), 0.0, "e;WRP5OX[MeW");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.IMPECÁVEL;
+      Malas malas0 = new Malas(malas_Tipos_Malas0, 10.0F, "e;WRP5OX[MeW", (-294), "e;WRP5OX[MeW", artigo_Estado0, (-2747), artigo_Avaliacao0, "e;WRP5OX[MeW", "e;WRP5OX[MeW", "e;WRP5OX[MeW", (-2747), 0.0, "e;WRP5OX[MeW");
       malas0.setMarca("e;WRP5OX[MeW");
       malas0.setTipo_mala(malas_Tipos_Malas0);
       Malas malas1 = new Malas(malas0);
@@ -731,15 +729,15 @@ public class Malas_ESTest extends Malas_ESTest_scaffolding {
   public void test41()  throws Throwable  {
       Malas.Tipos_Malas malas_Tipos_Malas0 = Malas.Tipos_Malas.NORMAL;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.NOVO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.SATISFATÓRIO;
-      Malas malas0 = new Malas(malas_Tipos_Malas0, 1905.8F, "A?|", 2, "YI'Hq!}/E2<4", artigo_Estado0, (-1), artigo_Avaliação0, "A?|", "", "", 1905.8F, 1905.8F, (String) null);
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.SATISFATÓRIO;
+      Malas malas0 = new Malas(malas_Tipos_Malas0, 1905.8F, "A?|", 2, "YI'Hq!}/E2<4", artigo_Estado0, (-1), artigo_Avaliacao0, "A?|", "", "", 1905.8F, 1905.8F, (String) null);
       Period period0 = Period.ofYears(1777);
       Period period1 = period0.minusYears(322L);
       period1.getChronology();
       ZoneOffset zoneOffset0 = ZoneOffset.MIN;
       Malas malas1 = new Malas(malas0);
-      Artigo.Avaliação artigo_Avaliação1 = Artigo.Avaliação.BOM;
-      Malas malas2 = new Malas(malas_Tipos_Malas0, 796.91F, "", (-1968526676), (String) null, artigo_Estado0, 2, artigo_Avaliação1, (String) null, "&", "", (-1968526676), 2, "");
+      Artigo.Avaliacao artigo_Avaliacao1 = Artigo.Avaliacao.BOM;
+      Malas malas2 = new Malas(malas_Tipos_Malas0, 796.91F, "", (-1968526676), (String) null, artigo_Estado0, 2, artigo_Avaliacao1, (String) null, "&", "", (-1968526676), 2, "");
       malas1.equals(malas2);
       Malas malas3 = new Malas();
       Malas malas4 = new Malas(malas3);
@@ -841,9 +839,9 @@ public class Malas_ESTest extends Malas_ESTest_scaffolding {
       malas0.setTipo_mala(malas_Tipos_Malas0);
       Artigo.Estado artigo_Estado1 = Artigo.Estado.NOVO;
       malas0.setDescricao("Oh374UaE}~eH");
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.IMPECÁVEL;
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.IMPECÁVEL;
       malas0.setEstado(artigo_Estado0);
-      malas0.setAvaliacao(artigo_Avaliação0);
+      malas0.setAvaliacao(artigo_Avaliacao0);
       Malas malas1 = malas0.clone();
       malas1.setAno_da_colecao(3719);
       malas1.setMarca("}ayl&hw");

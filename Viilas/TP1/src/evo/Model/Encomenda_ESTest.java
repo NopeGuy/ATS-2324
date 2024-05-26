@@ -8,19 +8,12 @@ package Model;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import static org.evosuite.runtime.EvoAssertions.*;
-import Model.Artigo;
-import Model.Encomenda;
-import Model.Malas;
-import Model.Sapatilhas;
+
 import java.time.Clock;
 import java.time.DateTimeException;
-import java.time.Duration;
 import java.time.LocalDate;
-import java.time.LocalTime;
 import java.time.Month;
-import java.time.OffsetTime;
 import java.time.Period;
-import java.time.YearMonth;
 import java.time.ZoneId;
 import java.time.ZoneOffset;
 import java.time.chrono.IsoChronology;
@@ -34,8 +27,6 @@ import org.evosuite.runtime.EvoRunnerParameters;
 import org.evosuite.runtime.mock.java.time.MockClock;
 import org.evosuite.runtime.mock.java.time.MockLocalDate;
 import org.evosuite.runtime.mock.java.time.MockLocalTime;
-import org.evosuite.runtime.mock.java.time.MockOffsetTime;
-import org.evosuite.runtime.mock.java.time.MockYearMonth;
 import org.evosuite.runtime.mock.java.time.chrono.MockIsoChronology;
 import org.evosuite.runtime.mock.java.time.chrono.MockThaiBuddhistDate;
 import org.junit.runner.RunWith;
@@ -154,8 +145,8 @@ public class Encomenda_ESTest extends Encomenda_ESTest_scaffolding {
       Encomenda encomenda2 = encomenda1.clone();
       Malas.Tipos_Malas malas_Tipos_Malas0 = Malas.Tipos_Malas.NORMAL;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.NOVO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.SATISFATÓRIO;
-      Malas malas0 = new Malas(malas_Tipos_Malas0, (-1263.66F), "", (-2027), "", artigo_Estado0, (-1504), artigo_Avaliação0, "", "", "ID da Encomenda: ", (-3190.61031), (-1504), "[{R");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.SATISFATÓRIO;
+      Malas malas0 = new Malas(malas_Tipos_Malas0, (-1263.66F), "", (-2027), "", artigo_Estado0, (-1504), artigo_Avaliacao0, "", "", "ID da Encomenda: ", (-3190.61031), (-1504), "[{R");
       malas0.setEstado(artigo_Estado0);
       encomenda0.equals(malas0);
       encomenda1.setCustosExpedicao((-1263.66F));
@@ -246,8 +237,8 @@ public class Encomenda_ESTest extends Encomenda_ESTest_scaffolding {
       Encomenda encomenda1 = encomenda0.clone();
       Malas.Tipos_Malas malas_Tipos_Malas0 = Malas.Tipos_Malas.NORMAL;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.NOVO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.SATISFATÓRIO;
-      Malas malas0 = new Malas(malas_Tipos_Malas0, (-1263.66F), "", (-2027), "", artigo_Estado0, (-1504), artigo_Avaliação0, "", "", "ID da Encomenda: ", (-3190.61031), (-1504), "[{R");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.SATISFATÓRIO;
+      Malas malas0 = new Malas(malas_Tipos_Malas0, (-1263.66F), "", (-2027), "", artigo_Estado0, (-1504), artigo_Avaliacao0, "", "", "ID da Encomenda: ", (-3190.61031), (-1504), "[{R");
       malas0.setEstado(artigo_Estado0);
       encomenda0.equals(malas0);
       encomenda0.setCustosExpedicao((-1263.66F));
@@ -5004,8 +4995,8 @@ public class Encomenda_ESTest extends Encomenda_ESTest_scaffolding {
       
       Sapatilhas.Tipos_Sapatilhas sapatilhas_Tipos_Sapatilhas0 = Sapatilhas.Tipos_Sapatilhas.NORMAL;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.NOVO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.BOM;
-      Sapatilhas sapatilhas0 = new Sapatilhas(491, true, "Dimens\u00E3o da embalagem: ", localDate0, sapatilhas_Tipos_Sapatilhas0, "Model.Artigo$Estado", artigo_Estado0, 491, artigo_Avaliação0, "Model.Artigo$Estado", "Dimens\u00E3o da embalagem: ", (String) null, (-1760.3658455523), (-912.9577551223), "Dimens\u00E3o da embalagem: ");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.BOM;
+      Sapatilhas sapatilhas0 = new Sapatilhas(491, true, "Dimens\u00E3o da embalagem: ", localDate0, sapatilhas_Tipos_Sapatilhas0, "Model.Artigo$Estado", artigo_Estado0, 491, artigo_Avaliacao0, "Model.Artigo$Estado", "Dimens\u00E3o da embalagem: ", (String) null, (-1760.3658455523), (-912.9577551223), "Dimens\u00E3o da embalagem: ");
       assertEquals(Sapatilhas.Tipos_Sapatilhas.NORMAL, sapatilhas0.getTiposSapatilhas());
       assertNull(sapatilhas0.getCodigo());
       assertEquals("Model.Artigo$Estado", sapatilhas0.getTipo());
@@ -8704,8 +8695,8 @@ public class Encomenda_ESTest extends Encomenda_ESTest_scaffolding {
       
       Malas.Tipos_Malas malas_Tipos_Malas0 = Malas.Tipos_Malas.NORMAL;
       Artigo.Estado artigo_Estado0 = Artigo.Estado.NOVO;
-      Artigo.Avaliação artigo_Avaliação0 = Artigo.Avaliação.SATISFATÓRIO;
-      Malas malas0 = new Malas(malas_Tipos_Malas0, (-1263.66F), "", (-2027), "", artigo_Estado0, (-1504), artigo_Avaliação0, "", "", "ID da Encomenda: ", (-3190.61031), (-1504), "[{R");
+      Artigo.Avaliacao artigo_Avaliacao0 = Artigo.Avaliacao.SATISFATÓRIO;
+      Malas malas0 = new Malas(malas_Tipos_Malas0, (-1263.66F), "", (-2027), "", artigo_Estado0, (-1504), artigo_Avaliacao0, "", "", "ID da Encomenda: ", (-3190.61031), (-1504), "[{R");
       assertEquals("", malas0.getTipo());
       assertEquals(Artigo.Estado.NOVO, malas0.getEstado());
       assertEquals(1, malas0.getId());

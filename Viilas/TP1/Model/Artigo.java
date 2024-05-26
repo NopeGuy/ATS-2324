@@ -9,7 +9,7 @@ public abstract class Artigo implements Serializable{
         NOVO,
         USADO
     }
-    public enum Avaliação{
+    public enum Avaliacao {
         IMPECÁVEL,
         BOM,
         SATISFATÓRIO,
@@ -19,7 +19,7 @@ public abstract class Artigo implements Serializable{
     private String tipo;                // Tipo do Produto
     private Estado estado;              // Estado do Produto
     private int numeroDonos;            // Número de Donos
-    private Avaliação avaliacao;
+    private Avaliacao avaliacao;
     private String descricao;           // Descrição do Produto
     private String marca;               // Marca do Produto
     private String codigo;              // Código Alfa-Númerico
@@ -41,7 +41,7 @@ public abstract class Artigo implements Serializable{
         this.transportadora = null;
     }
 
-    public Artigo(String tipo, Estado estado, int numeroDonos, Avaliação avaliacao, String descricao, String marca, String codigo, double precoBase, double correcaoPreco,String transportadora) {
+    public Artigo(String tipo, Estado estado, int numeroDonos, Avaliacao avaliacao, String descricao, String marca, String codigo, double precoBase, double correcaoPreco, String transportadora) {
         this.id = nextID++;
         this.tipo = tipo;
         this.estado = estado;
@@ -98,11 +98,11 @@ public abstract class Artigo implements Serializable{
         this.estado = estado;
     }
 
-    public Avaliação getAvaliacao(){
+    public Avaliacao getAvaliacao(){
         return avaliacao;
     }
 
-    public void setAvaliacao(Avaliação avaliacao){
+    public void setAvaliacao(Avaliacao avaliacao){
         this.avaliacao = avaliacao;
     }
 

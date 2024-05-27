@@ -1,143 +1,78 @@
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
 import java.time.LocalDate;
 
-public class SapatilhaTest extends Artigo{
-    private int tamanho;
-    private boolean atacadores; // possui ou não
-    private String cor;
-    private int anoColecao; // data de lançamento
-    private boolean premium;
-    private double desconto; // em percentagem
+public class SapatilhaTest {
 
-    // Construtores
-    public SapatilhaTest() {
-        super();
-        this.tamanho = 0;
-        this.atacadores = false;
-        this.cor = "";
-        this.anoColecao = 0;
-        this.premium = false;
-        this.desconto = 0;
+    @Test
+    public void testConstrutorVazio() {
+        Sapatilha sapatilha = new Sapatilha();
+        assertEquals(0, sapatilha.getTamanho());
+        assertFalse(sapatilha.isAtacadores());
+        assertEquals("", sapatilha.getCor());
+        assertEquals(0, sapatilha.getAnoColecao());
+        assertFalse(sapatilha.isPremium());
+        assertEquals(0, sapatilha.getDesconto());
     }
 
-    public SapatilhaTest(String descricao, String marca, Double preco_base, boolean uso, int estado_uso, int n_utilizadores,
-                         Long transportadora, Long vendedor, int tamanho, boolean atacadores, String cor, int anoColecao,
-                         boolean premium, double desconto) {
-        super(descricao, marca, preco_base, uso, estado_uso, n_utilizadores, transportadora, vendedor);
-        this.tamanho = tamanho;
-        this.atacadores = atacadores;
-        this.cor = cor;
-        this.anoColecao = anoColecao;
-        this.premium = premium;
-        this.desconto = desconto;
+    @Test
+    public void testConstrutorParametrizado() {
+        Sapatilha sapatilha = new Sapatilha("Descrição", "Marca", 100.0, false, 1, 1, 1L, 1L, 42, true, "Azul", 2021, true, 10.0);
+        assertEquals("Descrição", sapatilha.getDescricao());
+        assertEquals("Marca", sapatilha.getMarca());
+        assertEquals(100.0, sapatilha.getPreco_base());
+        assertFalse(sapatilha.getNovo());
+        assertEquals(1, sapatilha.getEstado_uso());
+        assertEquals(1, sapatilha.getN_utilizadores());
+        assertEquals(1L, sapatilha.getIdTransportadora());
+        assertEquals(1L, sapatilha.getIdVendedor());
+        assertEquals(42, sapatilha.getTamanho());
+        assertTrue(sapatilha.isAtacadores());
+        assertEquals("Azul", sapatilha.getCor());
+        assertEquals(2021, sapatilha.getAnoColecao());
+        assertTrue(sapatilha.isPremium());
+        assertEquals(10.0, sapatilha.getDesconto());
     }
 
-    public SapatilhaTest(SapatilhaTest s) {
-        super(s);
-        this.tamanho = s.getTamanho();
-        this.atacadores = s.isAtacadores();
-        this.cor = s.getCor();
-        this.anoColecao = s.getAnoColecao();
-        this.premium = s.isPremium();
-        this.desconto = s.getDesconto();
+    @Test
+    public void testClone() {
+        Sapatilha sapatilha = new Sapatilha("Descrição", "Marca", 100.0, false, 1, 1, 1L, 1L, 42, true, "Azul", 2021, true, 10.0);
+        Sapatilha clone = sapatilha.clone();
+        assertEquals(sapatilha, clone);
+        assertNotSame(sapatilha, clone);
     }
 
-    // Getters
-    public int getTamanho() {
-        return tamanho;
+    @Test
+    public void testEquals() {
+        Sapatilha sapatilha1 = new Sapatilha("Descrição", "Marca", 100.0, false, 1, 1, 1L, 1L, 42, true, "Azul", 2021, true, 10.0);
+        Sapatilha sapatilha2 = new Sapatilha("Descrição", "Marca", 100.0, false, 1, 1, 1L, 1L, 42, true, "Azul", 2021, true, 10.0);
+        assertEquals(sapatilha1, sapatilha2);
     }
 
-    public boolean isAtacadores() {
-        return atacadores;
+    @Test
+    public void testPrecoAtual() {
+        Sapatilha sapatilha = new Sapatilha("Descrição", "Marca", 100.0, false, 1, 1, 1L, 1L, 42, true, "Azul", 2021, true, 10.0);
+        LocalDate data = LocalDate.of(2023, 1, 1);
+        double preco = sapatilha.preco_atual(data);
+        double expected = 100.0 + (100.0 * (2023 - 2021) / 10);
+        assertEquals(expected, preco, 0.01);
+
+        sapatilha.setPremium(false);
+        preco = sapatilha.preco_atual(data);
+        expected = 100.0 - (100.0 * 1 / (10 * 1)) * (100 - 10.0) / 100;
+        assertEquals(expected, preco, 0.01);
+
+        sapatilha.setNovo(true);
+        preco = sapatilha.preco_atual(data);
+        expected = 100.0 * (100 - 10.0) / 100;
+        assertEquals(expected, preco, 0.01);
     }
 
-    public String getCor() {
-        return cor;
-    }
-
-    public int getAnoColecao() {
-        return anoColecao;
-    }
-
-    public boolean isPremium() {
-        return premium;
-    }
-
-    public double getDesconto() {
-        return desconto;
-    }
-
-    // Setters
-    public void setTamanho(int tamanho) {
-        this.tamanho = tamanho;
-    }
-
-    public void setAtacadores(boolean atacadores) {
-        this.atacadores = atacadores;
-    }
-
-    public void setCor(String cor) {
-        this.cor = cor;
-    }
-
-    public void setAnoColecao(int dataColecao) {
-        this.anoColecao = dataColecao;
-    }
-
-    public void setPremium(boolean premium) {
-        this.premium = premium;
-    }
-
-    public void setDesconto(double desconto) {
-        this.desconto = desconto;
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("Sapatilhas:: {");
-        sb.append(super.toString());
-        sb.append(" Tamanho: ").append(this.tamanho);
-        sb.append(" Atacadores: ").append(this.atacadores);
-        sb.append(" Cor: ").append(this.cor);
-        sb.append(" Data da Coleção: ").append(this.anoColecao);
-        sb.append(" Premium: ").append(this.premium);
-        sb.append(" Desconto: ").append(this.desconto).append("}");
-        return sb.toString();
-    }
-    @Override
-    public boolean equals(Object o) {
-        if (o == this)
-            return true;
-        if (o == null || o.getClass() != this.getClass())
-            return false;
-        SapatilhaTest s = (SapatilhaTest) o;
-
-        return (super.equals(s) && this.tamanho == s.getTamanho() && this.atacadores == s.isAtacadores()
-                && this.cor.equals(s.getCor()) && this.anoColecao == s.getAnoColecao()
-                && this.premium == s.isPremium() && this.desconto == s.getDesconto());
-    }
-
-    @Override
-    public SapatilhaTest clone() {
-        return new SapatilhaTest(this);
-    }
-
-    @Override
-    public double preco_atual(LocalDate data) {
-        double preco = this.getPreco_base();
-        if (this.premium)
-            if (this.getData_venda().equals(LocalDate.MIN) == true) {
-                preco += preco * (data.getYear() - this.anoColecao) / 10;
-            } else {
-                preco += preco * (this.getData_venda().getYear() - this.anoColecao) / 10;
-            }
-        else if (!this.getNovo()) {
-            preco -= preco * this.getN_utilizadores() / (10 * this.getEstado_uso()); // verificar fórmula a utilizar
-            preco *= (100 - this.desconto) / 100;
-        } else if (this.tamanho > 45 && this.getNovo())
-            preco *= (100 - this.desconto) / 100;
-        if (preco <= 0.01)
-            preco = 0.01;
-        return preco;
+    @Test
+    public void testToString() {
+        Sapatilha sapatilha = new Sapatilha("Descrição", "Marca", 100.0, false, 1, 1, 1L, 1L, 42, true, "Azul", 2021, true, 10.0);
+        String expected = "Sapatilhas:: {Artigo:: {Descrição: Descrição Marca: Marca Preço Base: 100.0 Novo: false Estado de Uso: 1 Número de Utilizadores: 1 Transportadora: 1 Vendedor: 1} Tamanho: 42 Atacadores: true Cor: Azul Data da Coleção: 2021 Premium: true Desconto: 10.0}";
+        assertEquals(expected, sapatilha.toString());
     }
 }

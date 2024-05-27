@@ -11,7 +11,7 @@ public class  Gestor_Artigos implements Serializable   {
     private static double taxaUsado = 0.25;
 
 
-    
+
 
     // Métodos de classe
     public static double getTaxaNovo() {
@@ -30,7 +30,7 @@ public class  Gestor_Artigos implements Serializable   {
         taxaUsado = novaTaxa;
     }
 
-    private  Map <String ,Artigo>  artigos; 
+    private  Map <String ,Artigo>  artigos;
 
 
     public Gestor_Artigos(){
@@ -56,7 +56,7 @@ public class  Gestor_Artigos implements Serializable   {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         for (String i : this.artigos.keySet()) {
-            if(this.artigos.get(i).getDisponivel() == true){     
+            if(this.artigos.get(i).getDisponivel() == true){
                 sb.append(this.artigos.get(i).toString()).append("\n");}
         }
         return sb.toString();
@@ -64,14 +64,14 @@ public class  Gestor_Artigos implements Serializable   {
        public String mostrar_gestor(LocalDate data) {
         StringBuilder sb = new StringBuilder();
         for (String i : this.artigos.keySet()) {
-            if(this.artigos.get(i).getDisponivel() == true){     
+            if(this.artigos.get(i).getDisponivel() == true){
                 sb.append(this.artigos.get(i).mostrar(data)).append("\n");}
         }
         return sb.toString();
     }
 
 
-    
+
     public boolean pesquisar_artigo_id(String id){
         Artigo artigo = artigos.get(id);
         if(artigo == null){
@@ -101,11 +101,11 @@ public class  Gestor_Artigos implements Serializable   {
         for (String i : this.artigos.keySet()) {
             if (this.artigos.get(i) instanceof Sapatilha){
                 Sapatilha sapatilhas = (Sapatilha) this.artigos.get(i);
-                if(sapatilhas.getDisponivel() == true  && sapatilhas.getMarca().equals(marca)){     
+                if(sapatilhas.getDisponivel() == true  && sapatilhas.getMarca().equals(marca)){
                     sb.append(this.artigos.get(i).toString()).append("\n");}
             }
         }
-        
+
      return (sb.toString());
     }
 
@@ -114,7 +114,7 @@ public class  Gestor_Artigos implements Serializable   {
         for (String i : this.artigos.keySet()) {
             if (this.artigos.get(i) instanceof Tshirt){
                 Tshirt tshirt = (Tshirt) this.artigos.get(i);
-                if(tshirt.getDisponivel() == true  && tshirt.getMarca().equals(marca)){     
+                if(tshirt.getDisponivel() == true  && tshirt.getMarca().equals(marca)){
                     sb.append(this.artigos.get(i).toString()).append("\n");}
             }
         }
@@ -126,7 +126,7 @@ public class  Gestor_Artigos implements Serializable   {
             for (String i : this.artigos.keySet()) {
                 if (this.artigos.get(i) instanceof Mala){
                     Mala mala = (Mala) this.artigos.get(i);
-                    if(mala.getDisponivel() == true  && mala.getMarca().equals(marca)){     
+                    if(mala.getDisponivel() == true  && mala.getMarca().equals(marca)){
                         sb.append(this.artigos.get(i).toString()).append("\n");}
                 }
             }
@@ -140,7 +140,7 @@ public class  Gestor_Artigos implements Serializable   {
         for (String i : this.artigos.keySet()) {
             if (this.artigos.get(i) instanceof Sapatilha){
                 Sapatilha sapatilhas = (Sapatilha) this.artigos.get(i);
-                if(sapatilhas.getDisponivel() == true  && sapatilhas.getNovo() == novo){     
+                if(sapatilhas.getDisponivel() == true  && sapatilhas.getNovo() == novo){
                     sb.append(this.artigos.get(i).toString()).append("\n");}
             }
         }
@@ -152,7 +152,7 @@ public class  Gestor_Artigos implements Serializable   {
         for (String i : this.artigos.keySet()) {
             if (this.artigos.get(i) instanceof Tshirt){
                 Tshirt tshirt = (Tshirt) this.artigos.get(i);
-                if(tshirt.getDisponivel() == true  && tshirt.getNovo() == novo){     
+                if(tshirt.getDisponivel() == true  && tshirt.getNovo() == novo){
                     sb.append(this.artigos.get(i).toString()).append("\n");}
             }
         }
@@ -164,46 +164,46 @@ public class  Gestor_Artigos implements Serializable   {
             for (String i : this.artigos.keySet()) {
                 if (this.artigos.get(i) instanceof Mala){
                     Mala mala = (Mala) this.artigos.get(i);
-                    if(mala.getDisponivel() == true  && mala.getNovo() == novo){     
+                    if(mala.getDisponivel() == true  && mala.getNovo() == novo){
                         sb.append(this.artigos.get(i).toString()).append("\n");}
                 }
             }
         return (sb.toString());
     }
-//---------------------------------------------------- Tamanho   
+//---------------------------------------------------- Tamanho
     public String pesquipesquisar_artigos_tamanho_sapatilhas(int tamanho){
          StringBuilder sb = new StringBuilder();
         for (String i : this.artigos.keySet()) {
             if (this.artigos.get(i) instanceof Sapatilha){
                 Sapatilha sapatilhas = (Sapatilha) this.artigos.get(i);
-                if(sapatilhas.getDisponivel() == true  &&  sapatilhas.getTamanho() == tamanho){     
+                if(sapatilhas.getDisponivel() == true  &&  sapatilhas.getTamanho() == tamanho){
                     sb.append(this.artigos.get(i).toString()).append("\n");}
             }
         }
      return (sb.toString());
-    } 
+    }
     public String pesquipesquisar_artigos_tamanho__tshit(Tamanho tamanho){
             StringBuilder sb = new StringBuilder();
             for (String i : this.artigos.keySet()) {
                 if (this.artigos.get(i) instanceof Tshirt){
                     Tshirt tshirt = (Tshirt) this.artigos.get(i);
-                    if(tshirt.getDisponivel() == true  &&  tshirt.getTamanho().equals(tamanho)){     
+                    if(tshirt.getDisponivel() == true  &&  tshirt.getTamanho().equals(tamanho)){
                         sb.append(this.artigos.get(i).toString()).append("\n");}
                 }
             }
         return (sb.toString());
-    } 
+    }
     public String pesquisar_artigos_dimensão_mala(int dimensao){
             StringBuilder sb = new StringBuilder();
             for (String i : this.artigos.keySet()) {
                 if (this.artigos.get(i) instanceof Mala){
                     Mala mala = (Mala) this.artigos.get(i);
-                    if(mala.getDisponivel() == true  &&  mala.getDimensao() == dimensao){     
+                    if(mala.getDisponivel() == true  &&  mala.getDimensao() == dimensao){
                         sb.append(this.artigos.get(i).toString()).append("\n");}
                 }
             }
         return (sb.toString());
-    }     
+    }
 
 
 //---------------------------------------------------- Cor
@@ -212,7 +212,7 @@ public class  Gestor_Artigos implements Serializable   {
         for (String i : this.artigos.keySet()) {
             if (this.artigos.get(i) instanceof Sapatilha){
                 Sapatilha sapatilhas = (Sapatilha) this.artigos.get(i);
-            if(this.artigos.get(i).getDisponivel() == true  && sapatilhas.getCor().equals(cor)){      
+            if(this.artigos.get(i).getDisponivel() == true  && sapatilhas.getCor().equals(cor)){
                 sb.append(this.artigos.get(i).toString()).append("\n");}
             }
         }
@@ -225,13 +225,13 @@ public class  Gestor_Artigos implements Serializable   {
         for (String i : this.artigos.keySet()) {
             if (this.artigos.get(i) instanceof Tshirt){
                 Tshirt tshirt = (Tshirt) this.artigos.get(i);
-            if(this.artigos.get(i).getDisponivel() == true  && tshirt.getPadrao().equals(padrao)) {    
+            if(this.artigos.get(i).getDisponivel() == true  && tshirt.getPadrao().equals(padrao)) {
                 sb.append(this.artigos.get(i).toString()).append("\n");}
             }
         }
      return (sb.toString());
     }
-    
+
 
 // ---------------------------------------------------- Material
      public String pesquisar_artigos_material(String material){
@@ -239,7 +239,7 @@ public class  Gestor_Artigos implements Serializable   {
         for (String i : this.artigos.keySet()) {
             if(this.artigos.get(i) instanceof Mala){
                 Mala mala = (Mala) this.artigos.get(i);
-                if( mala.getDisponivel() == true  && mala.getMaterial().equals(material)){     
+                if( mala.getDisponivel() == true  && mala.getMaterial().equals(material)){
                     sb.append(this.artigos.get(i).toString()).append("\n");}
                 }
             }
@@ -247,13 +247,13 @@ public class  Gestor_Artigos implements Serializable   {
         }
 
 
-// ---------------------------------------------------- Ano 
+// ---------------------------------------------------- Ano
   public String pesquisar_artigos_ano_colecao(int ano){
     StringBuilder sb = new StringBuilder();
     for (String i : this.artigos.keySet()) {
         if(this.artigos.get(i) instanceof Mala){
             Mala mala = (Mala) this.artigos.get(i);
-            if(mala.getDisponivel() == true  && mala.getAno_colecao() == ano){     
+            if(mala.getDisponivel() == true  && mala.getAno_colecao() == ano){
                 sb.append(this.artigos.get(i).toString()).append("\n");}
             }
         }
@@ -287,7 +287,7 @@ public class  Gestor_Artigos implements Serializable   {
 // ---------------------------------------------------- Tirar de disponivel o artigo
     public long tirar_disponivel_artigo(String codigo_barras) throws ArtigoNaoEncontradoException{
         if(this.artigos.containsKey(codigo_barras) == false){
-            throw new ArtigoNaoEncontradoException("O artigo "+codigo_barras+" não existe!"); 
+            throw new ArtigoNaoEncontradoException("O artigo "+codigo_barras+" não existe!");
         }
         else{
         this.artigos.get(codigo_barras).setDisponivel(false);
@@ -318,7 +318,7 @@ public class  Gestor_Artigos implements Serializable   {
         return this.artigos.get(idArtigo).toString();
     }
 
-    // Método que recebe uma Encomenda finalizada 
+    // Método que recebe uma Encomenda finalizada
     // e altera a data de venda dos artigos
     public void alteraData(Encomenda e){
         Set<String> idsArtigos = e.getEncomenda();
@@ -373,8 +373,8 @@ public class  Gestor_Artigos implements Serializable   {
             }
         }
         return preco;
-        
-    } 
+
+    }
     public double vintageFaturou(){
         double preco =0;
         for(Artigo a : this.artigos.values()){

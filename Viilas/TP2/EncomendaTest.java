@@ -73,7 +73,7 @@ public class EncomendaTest {
     }
 
     @Test
-    public void testRemoveTudo() {
+    public void testRemoveTudo() throws ArtigoExistenteException {
         Encomenda encomenda = new Encomenda();
         encomenda.adicionaArtigo("Artigo1");
         encomenda.adicionaArtigo("Artigo2");

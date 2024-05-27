@@ -52,8 +52,8 @@ public class Vintage implements Serializable{
     }
 
     public void SetSessaoAtual(String s){
-<span class="nc" id="L55">        this.sessaoAtual = s;</span>
-<span class="nc" id="L56">    }</span>
+<span class="fc" id="L55">        this.sessaoAtual = s;</span>
+<span class="fc" id="L56">    }</span>
 
 
 
@@ -76,11 +76,11 @@ public class Vintage implements Serializable{
 
 
     public List&lt;Encomenda&gt; getEncomendas(){
-<span class="nc" id="L79">        List&lt;Encomenda&gt; enc = new ArrayList&lt;&gt;();</span>
-<span class="nc bnc" id="L80" title="All 2 branches missed.">        for (Encomenda e : this.encomendas){</span>
-<span class="nc" id="L81">            enc.add(e.clone());</span>
+<span class="fc" id="L79">        List&lt;Encomenda&gt; enc = new ArrayList&lt;&gt;();</span>
+<span class="fc bfc" id="L80" title="All 2 branches covered.">        for (Encomenda e : this.encomendas){</span>
+<span class="fc" id="L81">            enc.add(e.clone());</span>
         }
-<span class="nc" id="L83">        return enc;</span>
+<span class="fc" id="L83">        return enc;</span>
     }
 
     
@@ -193,13 +193,13 @@ public class Vintage implements Serializable{
 
 
     public void adicionaUtilizador(Utilizador user){
-<span class="nc" id="L196">        utilizadores.put(user.getEmail(),user);</span>
-<span class="nc" id="L197">    }</span>
+<span class="fc" id="L196">        utilizadores.put(user.getEmail(),user);</span>
+<span class="fc" id="L197">    }</span>
 
 
     public void adicionarTransportadora(Transportadoras t){
-<span class="nc" id="L201">        transportadoras.put(t.getNome(), t);</span>
-<span class="nc" id="L202">    }</span>
+<span class="fc" id="L201">        transportadoras.put(t.getNome(), t);</span>
+<span class="fc" id="L202">    }</span>
 
     public Transportadoras getTransportadora(String t){
 <span class="nc" id="L205">        return this.transportadoras.get(t).clone();</span>
@@ -233,18 +233,18 @@ public class Vintage implements Serializable{
     }
 
     public void addEncomenda(Encomenda e){
-<span class="nc" id="L236">        this.encomendas.add(e);</span>
-<span class="nc" id="L237">    }</span>
+<span class="fc" id="L236">        this.encomendas.add(e);</span>
+<span class="fc" id="L237">    }</span>
 
     public void avancarTempo(){
-<span class="nc bnc" id="L240" title="All 2 branches missed.">        for (Encomenda e : this.encomendas){</span>
-<span class="nc" id="L241">            int comparar = this.dataPrograma.compareTo(e.getPrazoLimite());</span>
-<span class="nc bnc" id="L242" title="All 4 branches missed.">            if (comparar &gt; 0 &amp;&amp; e.getEstado() != Estado_Encomenda.DEVOLVIDA){</span>
+<span class="fc bfc" id="L240" title="All 2 branches covered.">        for (Encomenda e : this.encomendas){</span>
+<span class="fc" id="L241">            int comparar = this.dataPrograma.compareTo(e.getPrazoLimite());</span>
+<span class="pc bpc" id="L242" title="3 of 4 branches missed.">            if (comparar &gt; 0 &amp;&amp; e.getEstado() != Estado_Encomenda.DEVOLVIDA){</span>
 <span class="nc" id="L243">                e.setEstado(Estado_Encomenda.FINALIZADA);</span>
             }
 
         }
-<span class="nc" id="L247">    }</span>
+<span class="fc" id="L247">    }</span>
 
 
     public List&lt;Encomenda&gt; encomendasParaDevolver(){
@@ -290,36 +290,36 @@ public class Vintage implements Serializable{
 
 
     public void trataEncomenda(List&lt;Integer&gt; carrinho, List&lt;Artigo&gt; artigos, Map&lt;Integer,String&gt; vendedores){
-<span class="nc bnc" id="L293" title="All 2 branches missed.">        for (int id: carrinho){</span>
-<span class="nc" id="L294">            adicionaArtigo(id, artigos, vendedores);</span>
+<span class="fc bfc" id="L293" title="All 2 branches covered.">        for (int id: carrinho){</span>
+<span class="fc" id="L294">            adicionaArtigo(id, artigos, vendedores);</span>
         }
-<span class="nc" id="L296">    }</span>
+<span class="fc" id="L296">    }</span>
 
     private void adicionaArtigo(int id,List&lt;Artigo&gt; artigos,Map&lt;Integer,String&gt; vendedores){
 
-<span class="nc bnc" id="L300" title="All 2 branches missed.">        for (Map.Entry&lt;String,Utilizador&gt; user : this.utilizadores.entrySet()){</span>
-<span class="nc bnc" id="L301" title="All 4 branches missed.">            if (user.getValue().getPorVender().stream().anyMatch(artigo -&gt; artigo.getId() == id)){</span>
-<span class="nc" id="L302">                Artigo a = user.getValue().removePorVender(id);</span>
-<span class="nc" id="L303">                this.utilizadores.get(this.sessaoAtual).adicionaCompra(a.clone());</span>
-<span class="nc" id="L304">                user.getValue().adicionaVendas(a);</span>
-<span class="nc" id="L305">                user.getValue().adicionaFaturacao(this.dataPrograma,a.precoFinal(dataPrograma));    // adiciona a faturação</span>
-<span class="nc" id="L306">                artigos.add(a.clone());</span>
-<span class="nc" id="L307">                vendedores.put(id, user.getKey());</span>
+<span class="fc bfc" id="L300" title="All 2 branches covered.">        for (Map.Entry&lt;String,Utilizador&gt; user : this.utilizadores.entrySet()){</span>
+<span class="pc bpc" id="L301" title="1 of 4 branches missed.">            if (user.getValue().getPorVender().stream().anyMatch(artigo -&gt; artigo.getId() == id)){</span>
+<span class="fc" id="L302">                Artigo a = user.getValue().removePorVender(id);</span>
+<span class="fc" id="L303">                this.utilizadores.get(this.sessaoAtual).adicionaCompra(a.clone());</span>
+<span class="fc" id="L304">                user.getValue().adicionaVendas(a);</span>
+<span class="fc" id="L305">                user.getValue().adicionaFaturacao(this.dataPrograma,a.precoFinal(dataPrograma));    // adiciona a faturação</span>
+<span class="fc" id="L306">                artigos.add(a.clone());</span>
+<span class="fc" id="L307">                vendedores.put(id, user.getKey());</span>
             }
         }
-<span class="nc" id="L310">    }</span>
+<span class="fc" id="L310">    }</span>
 
     public double calculaCustoExpedicao(List&lt;Artigo&gt; artigosEncomenda){
-<span class="nc" id="L313">        double custosExpedicao = 0.0;</span>
+<span class="fc" id="L313">        double custosExpedicao = 0.0;</span>
 
-<span class="nc bnc" id="L315" title="All 2 branches missed.">        for (String t : this.transportadoras.keySet()){</span>
-<span class="nc" id="L316">            Long aux = artigosEncomenda.stream().filter(a -&gt; a.getTransportadora().equals(t)).count();</span>
-<span class="nc bnc" id="L317" title="All 2 branches missed.">            if (aux != 0){</span>
-<span class="nc" id="L318">                double expedicaoT = this.transportadoras.get(t).calculaPrecoExpedicao(aux);</span>
-<span class="nc" id="L319">                custosExpedicao +=expedicaoT;</span>
+<span class="fc bfc" id="L315" title="All 2 branches covered.">        for (String t : this.transportadoras.keySet()){</span>
+<span class="fc" id="L316">            Long aux = artigosEncomenda.stream().filter(a -&gt; a.getTransportadora().equals(t)).count();</span>
+<span class="pc bpc" id="L317" title="1 of 2 branches missed.">            if (aux != 0){</span>
+<span class="fc" id="L318">                double expedicaoT = this.transportadoras.get(t).calculaPrecoExpedicao(aux);</span>
+<span class="fc" id="L319">                custosExpedicao +=expedicaoT;</span>
             }
         }
-<span class="nc" id="L322">        return custosExpedicao;</span>
+<span class="fc" id="L322">        return custosExpedicao;</span>
     }
 
     public void adicionarPorVender(Artigo a,String user){

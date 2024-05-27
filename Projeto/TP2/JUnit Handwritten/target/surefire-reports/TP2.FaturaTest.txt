@@ -2,7 +2,7 @@
 Test set: TP2.FaturaTest
 -------------------------------------------------------------------------------
 Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! - in TP2.FaturaTest
-testClone  Time elapsed: 0 s  <<< FAILURE!
+testClone  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError: 
 expected:<Fatura 1 - Compra
 NIF do comprador: 123456789

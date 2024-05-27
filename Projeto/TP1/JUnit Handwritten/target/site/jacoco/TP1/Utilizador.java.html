@@ -113,8 +113,8 @@ public class Utilizador implements Serializable{
 
     public List&lt;Artigo&gt; getCompras(){
 <span class="fc" id="L115">        List&lt;Artigo&gt; aux = new ArrayList&lt;&gt;();</span>
-<span class="pc bpc" id="L116" title="1 of 2 branches missed.">        for (Artigo a : this.compras){</span>
-<span class="nc" id="L117">            aux.add(a.clone());</span>
+<span class="fc bfc" id="L116" title="All 2 branches covered.">        for (Artigo a : this.compras){</span>
+<span class="fc" id="L117">            aux.add(a.clone());</span>
         }
 <span class="fc" id="L119">        return aux;</span>
     }
@@ -130,8 +130,8 @@ public class Utilizador implements Serializable{
 
     public List&lt;Artigo&gt; getPorVender() {
 <span class="fc" id="L132">        List&lt;Artigo&gt; aux = new ArrayList&lt;&gt;();</span>
-<span class="pc bpc" id="L133" title="1 of 2 branches missed.">        for (Artigo a : this.porVender){</span>
-<span class="nc" id="L134">            aux.add(a.clone());</span>
+<span class="fc bfc" id="L133" title="All 2 branches covered.">        for (Artigo a : this.porVender){</span>
+<span class="fc" id="L134">            aux.add(a.clone());</span>
         }
 <span class="fc" id="L136">        return aux;</span>
     }
@@ -170,26 +170,26 @@ public class Utilizador implements Serializable{
 
     
     public void adicionarPorVender(Artigo a){
-<span class="nc" id="L173">        this.porVender.add(a.clone());</span>
-<span class="nc" id="L174">    }</span>
+<span class="fc" id="L173">        this.porVender.add(a.clone());</span>
+<span class="fc" id="L174">    }</span>
 
     public Artigo removePorVender(int id){
-<span class="nc" id="L177">        Artigo art = null;</span>
-<span class="nc bnc" id="L178" title="All 2 branches missed.">        for(Artigo a : this.porVender){</span>
-<span class="nc bnc" id="L179" title="All 2 branches missed.">            if (a.getId() == id){</span>
-<span class="nc" id="L180">                art  = a;</span>
-<span class="nc" id="L181">                break;</span>
+<span class="fc" id="L177">        Artigo art = null;</span>
+<span class="pc bpc" id="L178" title="1 of 2 branches missed.">        for(Artigo a : this.porVender){</span>
+<span class="pc bpc" id="L179" title="1 of 2 branches missed.">            if (a.getId() == id){</span>
+<span class="fc" id="L180">                art  = a;</span>
+<span class="fc" id="L181">                break;</span>
             }
         }
-<span class="nc bnc" id="L184" title="All 2 branches missed.">        if (art != null){</span>
-<span class="nc" id="L185">        this.porVender.remove(art);</span>
+<span class="pc bpc" id="L184" title="1 of 2 branches missed.">        if (art != null){</span>
+<span class="fc" id="L185">        this.porVender.remove(art);</span>
         }
-<span class="nc" id="L187">        return art;</span>
+<span class="fc" id="L187">        return art;</span>
     }
 
     public void adicionaVendas(Artigo a){
-<span class="nc" id="L191">        this.vendas.add(a.clone());</span>
-<span class="nc" id="L192">    }</span>
+<span class="fc" id="L191">        this.vendas.add(a.clone());</span>
+<span class="fc" id="L192">    }</span>
 
     public void removeVenda(int id){
 <span class="nc" id="L195">        Artigo art = null;</span>
@@ -206,8 +206,8 @@ public class Utilizador implements Serializable{
 
     // Para jogar pelo seguro
     public void adicionaCompra(Artigo a){
-<span class="nc" id="L209">        this.compras.add(a.clone());</span>
-<span class="nc" id="L210">    }</span>
+<span class="fc" id="L209">        this.compras.add(a.clone());</span>
+<span class="fc" id="L210">    }</span>
 
     public boolean equals(Object o) {
 <span class="fc bfc" id="L213" title="All 2 branches covered.">        if(this == o) </span>
@@ -262,10 +262,10 @@ public class Utilizador implements Serializable{
 
 
     public void adicionaFaturacao(LocalDate data, double valor){
-<span class="pc bpc" id="L265" title="1 of 2 branches missed.">        if (this.faturacao.containsKey(data)){</span>
-<span class="nc" id="L266">            double novoValor = faturacao.get(data) + valor;</span>
-<span class="nc" id="L267">            faturacao.put(data, novoValor);</span>
-<span class="nc" id="L268">        } else {</span>
+<span class="fc bfc" id="L265" title="All 2 branches covered.">        if (this.faturacao.containsKey(data)){</span>
+<span class="fc" id="L266">            double novoValor = faturacao.get(data) + valor;</span>
+<span class="fc" id="L267">            faturacao.put(data, novoValor);</span>
+<span class="fc" id="L268">        } else {</span>
 <span class="fc" id="L269">            faturacao.put(data, valor);</span>
         }
 <span class="fc" id="L271">    }</span>

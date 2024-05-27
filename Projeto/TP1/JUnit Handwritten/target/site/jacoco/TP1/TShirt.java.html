@@ -54,8 +54,8 @@ public class TShirt extends Artigo {
 <span class="fc" id="L54">    }</span>
 
     public boolean equals(Object o) {
-<span class="pc bpc" id="L57" title="1 of 2 branches missed.">        if(this == o) </span>
-<span class="nc" id="L58">            return true;</span>
+<span class="fc bfc" id="L57" title="All 2 branches covered.">        if(this == o) </span>
+<span class="fc" id="L58">            return true;</span>
 <span class="pc bpc" id="L59" title="2 of 4 branches missed.">        if((o == null) || (this.getClass() != o.getClass())) </span>
 <span class="nc" id="L60">            return false;</span>
 <span class="fc" id="L61">        TShirt t = (TShirt) o;</span>
@@ -80,7 +80,7 @@ public class TShirt extends Artigo {
 
     public double precoFinal(LocalDate data) {
 <span class="fc" id="L82">        double precoFinal = super.getPrecoBase();</span>
-<span class="pc bpc" id="L83" title="3 of 4 branches missed.">        if (this.padrao == Padrao.RISCAS || this.padrao == Padrao.PALMEIRAS) {</span>
+<span class="pc bpc" id="L83" title="1 of 4 branches missed.">        if (this.padrao == Padrao.RISCAS || this.padrao == Padrao.PALMEIRAS) {</span>
 <span class="pc bpc" id="L84" title="1 of 2 branches missed.">            if (super.getNumeroDonos() &gt; 0){precoFinal = super.getPrecoBase() * 0.5;}</span>
         }
 <span class="fc" id="L86">            return precoFinal;</span>

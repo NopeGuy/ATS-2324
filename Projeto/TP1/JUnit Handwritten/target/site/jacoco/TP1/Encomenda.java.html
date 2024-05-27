@@ -56,26 +56,26 @@ public class Encomenda implements Serializable{
 <span class="fc" id="L56">        this.dataCriacao = dataCriacao;</span>
 <span class="fc" id="L57">        this.tamanho = artigos.size();</span>
 <span class="pc bpc" id="L58" title="1 of 2 branches missed.">        if (this.tamanho &gt; 5) this.embalagem = Dimensao_Embalagem.GRANDE;</span>
-<span class="pc bpc" id="L59" title="3 of 4 branches missed.">        if (this.tamanho &gt; 1 &amp;&amp; this.tamanho &lt;= 5) this.embalagem = Dimensao_Embalagem.MEDIO;</span>
+<span class="pc bpc" id="L59" title="1 of 4 branches missed.">        if (this.tamanho &gt; 1 &amp;&amp; this.tamanho &lt;= 5) this.embalagem = Dimensao_Embalagem.MEDIO;</span>
 <span class="pc bpc" id="L60" title="1 of 2 branches missed.">        if (this.tamanho == 1) this.embalagem = Dimensao_Embalagem.PEQUENO;</span>
 <span class="fc" id="L61">        this.prazoLimite = dataCriacao.plusDays(2);</span>
 <span class="fc" id="L62">        this.vendedores  = vendedores; </span>
 
-<span class="pc bpc" id="L64" title="1 of 2 branches missed.">        for (Artigo a : artigos){</span>
+<span class="fc bfc" id="L64" title="All 2 branches covered.">        for (Artigo a : artigos){</span>
 
-<span class="nc bnc" id="L66" title="All 2 branches missed.">            if (a instanceof TShirt){</span>
-<span class="nc" id="L67">                TShirt t = (TShirt) a;</span>
-<span class="nc" id="L68">                precoFinal += t.precoFinal(dataCriacao);</span>
-<span class="nc" id="L69">            }</span>
-<span class="nc bnc" id="L70" title="All 2 branches missed.">            else if (a instanceof Sapatilhas){</span>
-<span class="nc" id="L71">                Sapatilhas s = (Sapatilhas) a;</span>
-<span class="nc" id="L72">                precoFinal += s.precoFinal(dataCriacao);</span>
-<span class="nc" id="L73">            }</span>
+<span class="fc bfc" id="L66" title="All 2 branches covered.">            if (a instanceof TShirt){</span>
+<span class="fc" id="L67">                TShirt t = (TShirt) a;</span>
+<span class="fc" id="L68">                precoFinal += t.precoFinal(dataCriacao);</span>
+<span class="fc" id="L69">            }</span>
+<span class="pc bpc" id="L70" title="1 of 2 branches missed.">            else if (a instanceof Sapatilhas){</span>
+<span class="fc" id="L71">                Sapatilhas s = (Sapatilhas) a;</span>
+<span class="fc" id="L72">                precoFinal += s.precoFinal(dataCriacao);</span>
+<span class="fc" id="L73">            }</span>
 <span class="nc bnc" id="L74" title="All 2 branches missed.">            else if (a instanceof Malas){</span>
 <span class="nc" id="L75">                Malas m = (Malas) a;</span>
 <span class="nc" id="L76">                precoFinal += m.precoFinal(dataCriacao);</span>
             }
-<span class="nc bnc" id="L78" title="All 2 branches missed.">            if (a.getEstado() == Artigo.Estado.NOVO){this.precoFinal += 0.5;}</span>
+<span class="pc bpc" id="L78" title="1 of 2 branches missed.">            if (a.getEstado() == Artigo.Estado.NOVO){this.precoFinal += 0.5;}</span>
 <span class="nc" id="L79">            else{this.precoFinal += 0.25;}</span>
         }
 <span class="fc" id="L81">        this.precoFinal += this.custosExpedicao;</span>
@@ -122,16 +122,16 @@ public class Encomenda implements Serializable{
 
     public List&lt;Artigo&gt; getArtigos() {
 <span class="fc" id="L124">    ArrayList&lt;Artigo&gt; res = new ArrayList&lt;&gt;();</span>
-<span class="pc bpc" id="L125" title="1 of 2 branches missed.">        for(Artigo a: this.artigos){</span>
-<span class="nc" id="L126">            res.add(a.clone());</span>
+<span class="fc bfc" id="L125" title="All 2 branches covered.">        for(Artigo a: this.artigos){</span>
+<span class="fc" id="L126">            res.add(a.clone());</span>
         }
 <span class="fc" id="L128">        return res;</span>
     }
 
     public void setArtigos(List&lt;Artigo&gt; artigos) {
 <span class="fc" id="L132">        this.artigos = new ArrayList&lt;&gt;(artigos.size());</span>
-<span class="pc bpc" id="L133" title="1 of 2 branches missed.">        for(Artigo a: artigos){</span>
-<span class="nc" id="L134">            this.artigos.add(a.clone());</span>
+<span class="fc bfc" id="L133" title="All 2 branches covered.">        for(Artigo a: artigos){</span>
+<span class="fc" id="L134">            this.artigos.add(a.clone());</span>
         }
 <span class="fc" id="L136">    }</span>
 

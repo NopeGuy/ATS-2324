@@ -39,7 +39,6 @@ public class MegaTest {
 
     }
 
-    /*
     @Test
     public void complexTest1() {
         // User1 adiciona itens para venda
@@ -98,5 +97,4 @@ public class MegaTest {
                 + vintage.calculaCustoExpedicao(carrinho);
         assertEquals(expectedCost, totalCost, 0.01);
     }
-  */
 }

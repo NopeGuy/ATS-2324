@@ -38,7 +38,7 @@ public class MegaTest {
     }
 
     @Test
-    public void complexTest1() {
+    public void complexTest() {
         // User1 adiciona itens para venda
         TShirt tshirt = new TShirt(TShirt.Tamanho.M, TShirt.Padrao.LISO, "T-Shirt", Artigo.Estado.NOVO, 0,
                 Artigo.Avaliação.IMPECÁVEL, "T-Shirt", "Brand", "TS123", 20.0, 5.0, transportadora.getNome());

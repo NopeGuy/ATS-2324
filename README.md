@@ -9,4 +9,4 @@
 ## Introduction:
 
 Project made for **ATS** (Análise e Teste de Software) class, at "Universidade do Minho" in 23/24 using. \
-Special thanks to [@LuisFilipe6](https://github.com/LuisFilipe6)
+Special thanks to [@LuisFilipe6](https://github.com/LuisFilipe6) .
